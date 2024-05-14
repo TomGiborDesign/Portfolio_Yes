@@ -260,6 +260,16 @@ body {
   background-color: #FFF;
 }
 
+#about-me {
+  width: 100vw;
+}
+
+
+.no-scroll {
+  overflow-y: hidden;
+  position: fixed;
+}
+
 /*IMG SIZE*/
 /*IMG SIZE*/
 /* img {
@@ -350,8 +360,6 @@ body a:active {
   justify-content: space-between;
   padding: 2rem 2.5rem;
   overflow-x: hidden;
-
-
 }
 
 .header-logo {
@@ -376,6 +384,7 @@ body a:active {
   background: none;
   cursor: pointer;
   display: block;
+  z-index: +1;
 }
 
 .icon-mobile-nav {
@@ -414,6 +423,8 @@ body a:active {
   pointer-events: auto;
   visibility: visible;
   transform: translate(0%, 0%);
+  width: 100vw;
+  height: 100vh;
 }
 
 .nav-open .mobile-nav .header-nav-list {
@@ -422,7 +433,6 @@ body a:active {
   flex-direction: column;
   gap: 4.8rem;
   padding: 0;
-
 }
 
 
@@ -442,7 +452,8 @@ body a:active {
 .nav-open .icon-mobile-nav[name="close-outline"] {
   display: block;
   position: relative;
-  z-index: +1;
+
+
 }
 
 .nav-open .icon-mobile-nav[name="menu-outline"] {

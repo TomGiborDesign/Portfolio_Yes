@@ -6,14 +6,61 @@ yearEl.textContent = currentYear;
 
 
 // MAKE MOBILE NAVIGATION WORK
-document.addEventListener('DOMContentLoaded', function () {
-  const btnNavEl = document.querySelector('.btn-mobile-nav');
-  const headerEl = document.querySelector('.upper-bar');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const btnNavEl = document.querySelector('.btn-mobile-nav');
+//   const headerEl = document.querySelector('.upper-bar');
+//   const navbarLinks = document.querySelector(".mobile-nav a");
 
-  btnNavEl.addEventListener("click", function () {
-    headerEl.classList.toggle("nav-open");
-  });
+//   btnNavEl.addEventListener("click", function () {
+//     headerEl.classList.toggle("nav-open");
+//   });
+
+
+//   navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+//   function navbarLinkClick() {
+//     if (navbarMenu.classList.contains("nav-open")) {
+//       navbarToggler.click();
+//     };
+//   };
+// });
+
+
+
+const navbarToggler = document.querySelector(".btn-mobile-nav");
+const navbarMenu = document.querySelector(".upper-bar");
+const navbarLinks = document.querySelectorAll(".mobile-nav a");
+
+navbarToggler.addEventListener("click", navbarTogglerClick);
+
+function navbarTogglerClick() {
+  navbarMenu.classList.toggle("nav-open");
+}
+
+navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+function navbarLinkClick() {
+  if (navbarMenu.classList.contains("open")) {
+    navbarToggler.click();
+  }
+};
+
+navbarToggler.addEventListener('click', () => {
+  document.body.classList.toggle('no-scroll')
 });
+
+const bsCollapse = new bootstrap.Collapse(navbarToggler, {
+  toggle: false
+})
+navbarLinks.forEach((l) => {
+  l.addEventListener('click', () => {
+    if (bsCollapse._isShown()) {
+      bsCollapse.hide()
+    }
+  })
+});
+
+
 
 
 ///////////////////////////////////////////////////////////
