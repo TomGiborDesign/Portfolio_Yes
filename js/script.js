@@ -37,29 +37,36 @@ function navbarTogglerClick() {
   navbarMenu.classList.toggle("nav-open");
 }
 
-navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+const contactToggler = document.querySelector(".contact-toggle");
+const workToggler = document.querySelector(".work-toggle");
 
-function navbarLinkClick() {
-  if (navbarMenu.classList.contains("open")) {
-    navbarToggler.click();
-  }
-};
 
-navbarToggler.addEventListener('click', () => {
-  document.body.classList.toggle('no-scroll')
-});
+contactToggler.addEventListener("click", contactTogglerClick);
 
-const bsCollapse = new bootstrap.Collapse(navbarToggler, {
-  toggle: false
-})
-navbarLinks.forEach((l) => {
-  l.addEventListener('click', () => {
-    if (bsCollapse._isShown()) {
-      bsCollapse.hide()
-    }
-  })
-});
+function contactTogglerClick() {
+  navbarMenu.classList.toggle("nav-open");
+}
 
+
+workToggler.addEventListener("click", workTogglerClick);
+
+function workTogglerClick() {
+  navbarMenu.classList.toggle("nav-open");
+}
+
+
+
+
+// navbarLinks.addEventListener("click", function =>
+//   {
+//     if(navbarToggler.classList.contains("nav-open")) {
+//   navbarToggler.click();
+// }
+// });
+
+// navbarToggler.addEventListener('click', () => {
+//   document.body.classList.toggle('no-scroll')
+// });
 
 
 

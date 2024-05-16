@@ -401,7 +401,7 @@ body a:active {
 /*MOBILE NAVIGATION-OPEN*/
 .mobile-nav {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,6 +415,7 @@ body a:active {
   pointer-events: none;
   visibility: hidden;
   transition: 500ms;
+  z-index: 999;
 }
 
 
