@@ -35,7 +35,7 @@
 <body id="pinnacle_case">
 
     <header class="header">
-        <div class="upper-bar">
+        <div class="upper-bar" id="header">
             <div class="header-logo"><img src="img/icons/tuxo_shield.svg" alt="logo" class="logo"></div>
 
             <nav class="desktop-nav mobile-nav">
@@ -55,12 +55,13 @@
         </div>
 
 
-        <section class="pp-hero"><!--case_study_into-->
+        <section class="pp-hero" id="pp-hero"><!--case_study_into-->
             <h1 class="pp-title">“Access cards, tickets, and payments, anytime, anywhere, right from your smartphone.”
             </h1>
             <div class="mockup">
                 <img src="img/pinnacle_pay/pinnacle_mockup_x3.png" alt="a mockup of the app's dashboard">
             </div>
+
         </section>
     </header>
     <div><!--section_divider-->
@@ -240,7 +241,7 @@
                 <h2>Affinity Map of the gathered info</h2>
                 <p>Each color represents a person</p>
             </div>
-            <div class="affinity-personas"><!--Affinity Map Images-->
+            <div class="affinity-personas-desktop"><!--Affinity Map Images-->
 
                 <img src="img/pinnacle_pay/Affinity_1_x4.png" alt="Affinity map notes">
 
@@ -253,92 +254,82 @@
                 <img src="img/pinnacle_pay/Affinity_3_x4.png" alt="Affinity map notes">
             </div>
 
-            <hr class="short">
-            >
-            <div class="key-findings"><!--Key Findings-->
-                <ul class="findings">
-                    <li class="finding-item">
-                        <div>
-                            <img src="img/icons/protect_svg.svg" alt="image of a shield">
-                        </div>
-                        <div>
-                            <h2>Security</h2>
-                            <p>Many users report feeling suspicious or scared of holding payment methods on their
-                                wallets.
-                                The fear of losing the phone, having it stolen, forgetting passwords, or having your
-                                money stolen.</p>
-                        </div>
-                    </li>
-                    <li class="finding-item">
-                        <div>
-                            <img src="img/icons/benefits_svg.svg" alt="two hands collecting gifts">
 
-                            <div>
-                                <h2>Benefits</h2>
-                                <p>Cash-back or points for free items are among the most influential incentives that
-                                    make
-                                    people choose one payment method over another.
-                                    Even reluctant users might opt to use an app if they get a return worth money.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="finding-item">
-                        <div>
-                            <img src="img/icons/pain_svg.svg" alt="a suffering emoji">
-                        </div>
-                        <div>
-                            <h2>Pains</h2>
-                            <p>Users don't usually enjoy carrying bills,
-                                and some cards offer undesired payment conditions such as high commission or exchange
-                                rates abroad.</p>
-                        </div>
-                    </li>
-                    <li class="finding-item">
-                        <div>
-                            <img src="img/icons/norms_svg.svg" alt="a stickfiguere">
-                        </div>
-                        <div>
-                            <h2>Norms</h2>
-                            <p>Social norms regarding online payments vary widely among countries. it is no surprise
-                                then that generally,
-                                in countries where most people pay with their mobile, non-residents want to do the same.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="finding-item">
-                        <div>
-                            <img src="img/icons/cus_serv_svg.svg" alt="icons of messaging and talking">
-                        </div>
-                        <div>
-                            <h2>Customer Service</h2>
-                            <p>Clients want to have somebody who looks after them,
-                                and they want to be able to reach that person in case of emergency.
-                                When using apps like Apple Pay the bank is still responsible for clients' money.
-                                On Pay Pal, however, there is no guarantee.</p>
-                        </div>
-                    </li>
-                    <li class="finding-item">
-                        <div>
-                            <img src="img/icons/feature_svg.svg" alt="three sqaures and a star">
-                        </div>
-                        <div>
-                            <h2>Extra Features</h2>
-                            <p>In an ever-more dynamic world, being able to show or use different currencies easily is a
-                                repeated request.
-                                Some other desired features are quick to launch by double tapping a button, multiple
-                                verification means,
-                                ticket management, and a clear confirmation once a deal has gone through</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="affinity-personas-mobile">
+                <img src="img/pinnacle_pay/fears_reservations.png" alt="Affinity map notes">
+                <hr class="short">
+                <img src="img/pinnacle_pay/payment_habits.png" alt="">
+                <hr class="short">
+                <img src="img/pinnacle_pay/formative_experiences.png" alt="">
+                <hr class="short">
+                <img src="img/pinnacle_pay/needs.png" alt="">
+                <hr class="short">
+                <img src="img/pinnacle_pay/external_challanges.png" alt="">
+                <hr class="short">
+                <img src="img/pinnacle_pay/desired_features.png" alt="">
+
+            </div>
+            <hr class="short">
+
+            <div class="key-findings"><!--Key Findings-->
+                <img src="img/icons/protect_svg.svg" alt="image of a shield" class="finding-icon1">
+                <img src="img/icons/benefits_svg.svg" alt="two hands collecting gifts" class="finding-icon2">
+                <img src="img/icons/pain_svg.svg" alt="a suffering emoji" class="finding-icon3">
+                <img src="img/icons/norms_svg.svg" alt="a stickfiguere" class="finding-icon4">
+                <img src="img/icons/cus_serv_svg.svg" alt="icons of messaging and talking" class="finding-icon5">
+                <img src="img/icons/feature_svg.svg" alt="three sqaures and a star" class="finding-icon6">
+
+
+                <div class="finding-item1">
+                    <h2>Security</h2>
+                    <p>Many users report feeling suspicious or scared of holding payment methods on their
+                        wallets.
+                        The fear of losing the phone, having it stolen, forgetting passwords, or having your
+                        money stolen.</p>
+                </div>
+                <div class="finding-item2">
+                    <h2>Benefits</h2>
+                    <p>Cash-back or points for free items are among the most influential incentives that
+                        make
+                        people choose one payment method over another.
+                        Even reluctant users might opt to use an app if they get a return worth money.</p>
+                </div>
+                <div class="finding-item3">
+                    <h2>Pains</h2>
+                    <p>Users don't usually enjoy carrying bills,
+                        and some cards offer undesired payment conditions such as high commission or exchange
+                        rates abroad.</p>
+                </div>
+                <div class="finding-item4">
+                    <h2>Norms</h2>
+                    <p>Social norms regarding online payments vary widely among countries. it is no surprise
+                        then that generally,
+                        in countries where most people pay with their mobile, non-residents want to do the same.
+                    </p>
+                </div>
+                <div class="finding-item5">
+                    <h2>Customer Service</h2>
+                    <p>Clients want to have somebody who looks after them,
+                        and they want to be able to reach that person in case of emergency.
+                        When using apps like Apple Pay the bank is still responsible for clients' money.
+                        On Pay Pal, however, there is no guarantee.</p>
+                </div>
+                <div class="finding-item6">
+                    <h2>Extra Features</h2>
+                    <p>In an ever-more dynamic world, being able to show or use different currencies easily is a
+                        repeated request.
+                        Some other desired features are quick to launch by double tapping a button, multiple
+                        verification means,
+                        ticket management, and a clear confirmation once a deal has gone through</p>
+                </div>
             </div><!--Close_Key Findings-->
         </div><!--Close_User Research-->
         <div class="divide-line">
             <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg">
             <hr class="right-line">
         </div>
-        <div><!--User personas-->
-            <div><!--Personas info-->
+        <div class="user-personas"><!--User personas-->
+            <div class="personas-background"><!--Personas info-->
                 <h2>User Personas</h2>
                 <p>I generated the following two user personas using information collected from competitor analysis,
                     desk research, and user interviews.
@@ -367,8 +358,8 @@
             <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg">
             <hr class="right-line">
         </div>
-        <div>
-            <div><!--Journey Maps_Intro-->
+        <div class="user-journey">
+            <div class="journey-background"><!--Journey Maps_Intro-->
                 <h2>Journey Maps</h2>
                 <p>Journey maps are a great tool by which we illustrate a task's journey by its finest details and
                     actions involved.
@@ -391,8 +382,8 @@
             <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg">
             <hr class="right-line">
         </div>
-        <div>
-            <div><!--User Flows_Intro-->
+        <div class="user-flows">
+            <div class="flows-background"><!--User Flows_Intro-->
                 <h2>User Flows</h2>
                 <p>User flows are an important design technic that helped me detail the steps taken by a user leaving
                     from point A,
@@ -459,16 +450,16 @@
                 as this phase is more about designing the interactions rather than the app style.
                 Here are a few low-fi prototypes that include possible pathways for users.</p>
 
-            <div>
-                <h2>2 Steps Verification</h2>
-                <img src="img/pinnacle_pay/2st_x4.png" alt="a sketch of a feature">
 
-                <h2>Validate a Ticket</h2>
-                <img src="img/pinnacle_pay/validate_x4.png" alt="a sketch of a feature">
+            <h2>2 Steps Verification</h2>
+            <img src="img/pinnacle_pay/2st_x4.png" alt="a sketch of a feature">
 
-                <h2>Make a Payment</h2>
-                <img src="img/pinnacle_pay/payment_x4.png" alt="a sketch of a feature">
-            </div>
+            <h2>Validate a Ticket</h2>
+            <img src="img/pinnacle_pay/validate_x4.png" alt="a sketch of a feature">
+
+            <h2>Make a Payment</h2>
+            <img src="img/pinnacle_pay/payment_x4.png" alt="a sketch of a feature">
+
         </div>
         <div class="divide-line">
             <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg">
@@ -489,7 +480,7 @@
             <hr class="right-line">
         </div>
         <div class="usability"><!--Usability Testing-->
-            <div><!--Testing text-->
+            <div class="usability-background"><!--Testing text-->
                 <h2>Usability Testing</h2>
                 <p>Usability testing is a design practice in which we let real users use a prototype and by which we
                     reveal
@@ -498,45 +489,45 @@
 
             </div>
             <div class="test-obj"><!--Testing objectives-->
-                <ul class="objectives">
-                    <li class="objectives-item">
-                        <img src="img/icons/goal_svg.svg" alt="arrow on a target">
-                        <div>
-                            <h2>Study Goals</h2>
-                            <p>The goal was to expose any wrong assumptions made while designing the
-                                app. Notably by observing human errors. I tried to find new ways the
-                                app could be more efficient and learnable for the users.</p>
-                        </div>
-                    </li>
-                    <li class="objectives-item">
-                        <img src="img/icons/objectives_svg.svg" alt="a list on a page">
-                        <div>
-                            <h2>Test Objectives</h2>
-                            <p>I tested three main features of the app:</p>
-                            <ul>
-                                <li>Registering using a 2 steps verification method</li>
-                                <li>Paying in a physical store</li>
-                                <li>Validating a bus ticket once on the bus </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="objectives-item">
-                        <img src="img/icons/methodology_svg.svg" alt="science">
-                        <div>
-                            <h2>Methodology</h2>
-                            <p>I used three different ways of testing: moderated face-to-face, remote testing, as
-                                well as unmoderated testing.</p>
-                        </div>
-                    </li>
-                </ul>
 
-                <hr class="short">
+                <div class="objectives-icon oicon1">
+                    <img src="img/icons/goal_svg.svg" alt="arrow on a target">
+                </div>
+                <div class="objectives-icon oicon2">
+                    <img src="img/icons/objectives_svg.svg" alt="a list on a page">
+                </div>
+                <div class="objectives-icon oicon3">
+                    <img src="img/icons/methodology_svg.svg" alt="science">
+                </div>
+                <div class="objectives-item oi1">
+                    <h2>Study Goals</h2>
+                    <p>The goal was to expose any wrong assumptions made while designing the
+                        app. Notably by observing human errors. I tried to find new ways the
+                        app could be more efficient and learnable for the users.</p>
+                </div>
+                <div class="objectives-item oi2">
+                    <h2>Test Objectives</h2>
+                    <p>I tested three main features of the app:</p>
+                    <ul>
+                        <li>Registering using a 2 steps verification method</li>
+                        <li>Paying in a physical store</li>
+                        <li>Validating a bus ticket once on the bus </li>
+                    </ul>
+                </div>
+                <div class="objectives-item oi3">
+                    <h2>Methodology</h2>
+                    <p>I used three different ways of testing: moderated face-to-face, remote testing, as
+                        well as unmoderated testing.</p>
+                </div>
 
-                <p>I summarized the information in a Rainbow Spreadsheet and then organized the data into categories
-                    using an Affinity Map.
-                    The latter makes it easier to communicate the results with stakeholders.</p>
+
+
 
             </div><!--Close_Testing objectives-->
+            <hr class="short">
+            <p>I summarized the information in a Rainbow Spreadsheet and then organized the data into categories
+                using an Affinity Map.
+                The latter makes it easier to communicate the results with stakeholders.</p>
             <div class="test-affinity"><!--Testing Affinity Map-->
                 <h2>Affinity Map</h2>
                 <img src="img/pinnacle_pay/usa_tes_affinity_x4.png" alt="affinity map for usability testing">
@@ -627,9 +618,10 @@
         </h2>
     </div>
     <section class="learnings">
-        <div>
+        <hr class="short">
+        <div class="learnings-container">
 
-            <hr class="short">
+
 
             <p class="learnings">
                 This was the first project I undertook entirely by myself.
@@ -650,8 +642,7 @@
         </div>
         <br>
         <div class="return-to-top">
-            <a class="return_to_top" href="#header">Return to the top of the page</a>
-            <img class="return_to_top" src="img/icons/up_arrow_svg.svg" alt="arrow up right">
+            <a href="#header" class="to-top">Back to top</a>
         </div>
 
     </section>
@@ -662,9 +653,10 @@
             </div>
             <h2 class="footer-header">Tomer UX Oddesy</h2>
             <div class="footer-text">
-                <p class="contact-p">Get in Touch<br>
-                    Have questions? Want to explore cooperation? Need a coffee buddy?<br>
-                    Email or massgage me on LinkedIn</p>
+                <h4 class="contact-h">Want to get in touch?</h4>
+                <p class="contact-p">Whatever the reason is, feel free to contact me <br> through Email or LinkedIn
+                    using the buttons on the
+                    left</p>
                 <p class="copy">Copyright &copy; <span class="footer-year">2024</span> by Tomer Rozenberg.<br>All rights
                     reserved.</p>
             </div>
