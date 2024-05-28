@@ -2,233 +2,304 @@
 /*ADDED FONTS*/
 
 
-
-
-
-.libre-franklin {
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 400;
+@font-face{
+  font-family:"Libre Franklin", sans-serif ;
+  src: url('files/fonts/IBM_Plex_Sans/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf') 
+  format('truetype');
+  font-weight: 125 950;
   font-style: normal;
-}
-
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
   font-style: italic;
 }
 
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
+
+@font-face {
+  font-family: 'Libre Franklin', sans-serif;
+  font-face:"Libre Franklin Regular"; 
+  src: url('files/fonts/Libre_Franklin/LibreFranklin-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'Libre Franklin', sans-serif;
+  font-face:"Libre Franklin Bold";
+  src: url('files/fonts/Libre_Franklin/LibreFranklin-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-}
+  }
 
 
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Libre Baskerville", serif ;
+    src: url('files/fonts/Libre_Baskerville,PT_Serif/Libre_Baskerville/LibreBaskerville-Regular') 
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Libre Baskerville", serif ;
+    src: url('files/fonts/Libre_Baskerville,PT_Serif/Libre_Baskerville/LibreBaskerville-Bold') 
+    format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-thin') 
+    format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-thinItalic') 
+    format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
 
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-ExtraLight') 
+    format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
 
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-ExtraLightItalic') 
+    format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
 
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-Light') 
+    format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
 
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-LightItalic') 
+    format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-Regular') 
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-RegularItalic') 
+    format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
 
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-Medium') 
+    format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-MediumItalic') 
+    format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
 
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-SemiBold') 
+    format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-SemiBoldItalic') 
+    format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
 
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-Bold') 
+    format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-BoldItalic') 
+    format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
 
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-ExtraBold') 
+    format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-ExtraBoldItalic') 
+    format('truetype');
+    font-weight: 800;
+    font-style: italic;
+  }
 
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-Black') 
+    format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
 
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
+  @font-face{
+    font-family:"Poppins", sans-serif ;
+    src: url('files/fonts/Poppins/Poppins-BlackItalic') 
+    format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
 
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-.prompt-regular {
-  font-family: "Prompt", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Thin') 
+    format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
 
 
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-ThinItalic') 
+    format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
 
-.ibm-plex-sans-thin {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight') 
+    format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
 
-.ibm-plex-sans-thin-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLightItalic') 
+    format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
 
-.ibm-plex-sans-extralight {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Light') 
+    format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
 
-.ibm-plex-sans-extralight-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-LightItalic') 
+    format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Regular') 
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
-.ibm-plex-sans-light {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-RegularItalic') 
+    format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
 
-.ibm-plex-sans-light-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Medium') 
+    format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
 
-.ibm-plex-sans-regular {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-MediumItalic') 
+    format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
 
-.ibm-plex-sans-regular-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold') 
+    format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
 
-.ibm-plex-sans-medium {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBoldItalic') 
+    format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
 
-.ibm-plex-sans-medium-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Bold') 
+    format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
 
-.ibm-plex-sans-semibold {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
+  @font-face{
+    font-family: "IBM Plex Sans", sans-serif;
+    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic') 
+    format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
 
-.ibm-plex-sans-semibold-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.ibm-plex-sans-bold {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ibm-plex-sans-bold-italic {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
 
 
 /*UNIVERSALS*/
@@ -354,13 +425,14 @@ body a:active {
 /* HEADER */
 .header {
   overflow-x: hidden;
+  overflow-y: hidden;
   /* position: relative; */
 }
 
 .upper-bar {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2.5rem;
+  padding: 2rem 2.5rem 0rem 2.5rem;
   overflow-x: hidden;
 }
 
@@ -404,14 +476,14 @@ body a:active {
 }
 
 
-.icon-mobile-nav[name="close-outline"] {
+#close-outline {
   display: none;
   border: none;
   width: 4.5rem;
   height: 4.5rem;
 }
 
-.icon-mobile-nav[name="menu-outline"] {
+#menu-outline {
   margin-top: .45rem;
   margin-right: .4rem;
   width: 3.5rem;
@@ -472,14 +544,14 @@ body a:active {
 }
 
 
-.nav-open .icon-mobile-nav[name="close-outline"] {
+.nav-open #close-outline {
   display: block;
   position: relative;
 
 
 }
 
-.nav-open .icon-mobile-nav[name="menu-outline"] {
+.nav-open #menu-outline {
   display: none;
 }
 
@@ -704,6 +776,7 @@ body a:active {
   font-weight: 400;
   letter-spacing: 0.05rem;
   margin: 1rem auto;
+  width: 100%;
 
 
 
@@ -733,6 +806,7 @@ body a:active {
   font-weight: 400;
   letter-spacing: 0.05rem;
   margin: 1rem auto;
+  width: 100%;
 
 }
 
@@ -1265,15 +1339,15 @@ body a:active {
   margin: 1rem auto;
 }
 
-.resume a:any-link {
+  a.resume:any-link {
   font-size: 1.6rem;
   font-weight: bold;
   color: #3d3d3d;
 }
 
-.resume a:visited,
-.resume a:hover,
-.resume a:active {
+a.resume:visited,
+a.resume:hover,
+a.resume:active {
   text-decoration: none;
 }
 
@@ -1803,7 +1877,6 @@ Large devices (1024px or larger)
     text-align: center;
     font-family: "Libre Baskerville", serif;
     margin: 0 auto;
-    padding: 0 auto;
   }
 
   .hero-text h1 {
@@ -1828,7 +1901,6 @@ Large devices (1024px or larger)
     grid-column: 2 / 3;
     max-width: 40vw;
     margin: 0 auto;
-    padding: 0 auto;
   }
 
 
@@ -1968,7 +2040,7 @@ Large devices (1024px or larger)
   .header-nav-item a:visited,
   .header-nav-item a:hover,
   .header-nav-item a:active {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 
   }
 
@@ -2007,7 +2079,7 @@ Large devices (1024px or larger)
     align-items: flex-start;
     justify-content: space-between;
     height: 100%;
-    width: 60%;
+    width: 80%;
   }
 
   .left-bio {
@@ -2017,7 +2089,7 @@ Large devices (1024px or larger)
   .right-bio h6,
   .left-bio h6 {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #818181;
     font-family: "Poppins", sans-serif;
     margin: 0 auto 2rem auto;
@@ -2025,7 +2097,7 @@ Large devices (1024px or larger)
 
   .right-bio p,
   .left-bio p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #000000;
     font-family: "Libre Baskerville", serif;
@@ -2069,7 +2141,7 @@ Large devices (1024px or larger)
   /*TAGS*/
   .wl-item1 h6,
   .wl-item2 h6 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
 
   }
@@ -2098,7 +2170,7 @@ Large devices (1024px or larger)
   }
 
   .btn {
-    font-size: 1..6rem;
+    font-size: 1.6rem;
     padding: 1.2rem 1rem;
   }
 
@@ -2134,19 +2206,7 @@ Large devices (1024px or larger)
     width: 70vw;
   }
 
-  .affinity-personas-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    margin: 6rem auto;
-  }
-
-  .affinity-personas-mobile {
-    display: none;
-
-  }
+ 
 
 
 
@@ -2211,13 +2271,22 @@ X-large devices (1440px or larger)
   }
 
   .header {
-    height: 110vh;
+    height: auto;
   }
 
   .right-bio,
   .left-bio {
-    width: 50%;
+    width: 70%;
   }
+
+  .right-bio h6,
+  .left-bio h6 {
+    font-size: 1.8rem;
+}
+.right-bio p,
+  .left-bio p {
+    font-size: 2rem;
+}
 
   .hero-text h1 {
     font-size: 3.2rem;
@@ -2256,7 +2325,7 @@ X-large devices (1440px or larger)
 
   .my-work h2 {
     text-align: center;
-    font-size: 3.6rem;
+    font-size: 3rem;
     font-weight: 300;
     font-family: "prompt", sans-serif;
     margin-bottom: 0;
@@ -2317,15 +2386,13 @@ X-large devices (1440px or larger)
 
   .wli-text {
     padding-left: 2rem;
-    gap: auto;
-
   }
 
 
   /*TAGS*/
   .wl-item1 h6,
   .wl-item2 h6 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
 
   }
@@ -2432,6 +2499,21 @@ X-large devices (1440px or larger)
     align-self: center;
   }
 
+
+  .affinity-personas-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 6rem auto;
+  }
+
+  .affinity-personas-mobile {
+    display: none;
+
+  }
+
   .user-flow img {
     width: 100%;
   }
@@ -2446,6 +2528,9 @@ X-large devices (1440px or larger)
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto;
   }
+
+
+
 
   .oi1,
   .oicon1 {
@@ -2560,13 +2645,16 @@ X-large devices (1440px or larger)
     padding: 4rem 10rem;
     border-radius: 8rem;
     margin: 8rem auto;
+    
   }
 
-  .resume a:any-link {
+
+  a.resume:any-link {
     font-size: 3.2rem;
     color: #242424;
-
   }
+
+
 
   .footer-header {
     font-size: 3.2rem;
@@ -2601,23 +2689,14 @@ X-large devices (1440px or larger)
 
 @media only screen and (min-width: 1550px) {
   .header {
-    height: 120vh;
+    height: auto;
   }
 
   .hero-section img {
     max-width: 20vw;
   }
 
-  .right-bio,
-  .left-bio {
-    width: 50%;
-  }
-
-
-  .right-bio h6,
-  .left-bio h6 {
-    font-size: 1.6rem;
-  }
+ 
 
   .right-bio p,
   .left-bio p {
@@ -2633,11 +2712,23 @@ X-large devices (1440px or larger)
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media (min-width: 1920px) {}
+@media (min-width: 1920px) {
+  
+  .right-bio,
+  .left-bio {
+    width: 60%;
+  }
+
+
+  .right-bio h6,
+  .left-bio h6 {
+    font-size: 1.8rem;
+  }
+}
 
 
 @media (min-width: 2320px) {
   .header {
-    height: 130vh;
+    height: auto;
   }
 }

@@ -1,35 +1,14 @@
 
+
 // SET CURRENT YEAR
 const yearEl = document.querySelector('.footer-year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 
-// MAKE MOBILE NAVIGATION WORK
-// document.addEventListener('DOMContentLoaded', function () {
-//   const btnNavEl = document.querySelector('.btn-mobile-nav');
-//   const headerEl = document.querySelector('.upper-bar');
-//   const navbarLinks = document.querySelector(".mobile-nav a");
-
-//   btnNavEl.addEventListener("click", function () {
-//     headerEl.classList.toggle("nav-open");
-//   });
-
-
-//   navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
-
-//   function navbarLinkClick() {
-//     if (navbarMenu.classList.contains("nav-open")) {
-//       navbarToggler.click();
-//     };
-//   };
-// });
-
-
-
+//MOBILE NAV
 const navbarToggler = document.querySelector(".btn-mobile-nav");
 const navbarMenu = document.querySelector(".upper-bar");
-const navbarLinks = document.querySelectorAll(".mobile-nav a");
 
 navbarToggler.addEventListener("click", navbarTogglerClick);
 
@@ -56,17 +35,6 @@ function workTogglerClick() {
 
 
 
-
-// navbarLinks.addEventListener("click", function =>
-//   {
-//     if(navbarToggler.classList.contains("nav-open")) {
-//   navbarToggler.click();
-// }
-// });
-
-// navbarToggler.addEventListener('click', () => {
-//   document.body.classList.toggle('no-scroll')
-// });
 
 
 
