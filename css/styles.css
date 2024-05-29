@@ -4,7 +4,7 @@
 
 @font-face{
   font-family:"Libre Franklin", sans-serif ;
-  src: url('files/fonts/IBM_Plex_Sans/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf') 
+  src: url("/files/Fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf") 
   format('truetype');
   font-weight: 125 950;
   font-style: normal;
@@ -12,10 +12,10 @@
 }
 
 
-@font-face {
+/* @font-face {
   font-family: 'Libre Franklin', sans-serif;
   font-face:"Libre Franklin Regular"; 
-  src: url('files/fonts/Libre_Franklin/LibreFranklin-Regular.ttf') format('truetype');
+  src: url('/files/fonts/Libre_Franklin/LibreFranklin-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -23,174 +23,187 @@
   @font-face {
     font-family: 'Libre Franklin', sans-serif;
   font-face:"Libre Franklin Bold";
-  src: url('files/fonts/Libre_Franklin/LibreFranklin-Bold.ttf') format('truetype');
+  src: url('/files/fonts/Libre_Franklin/LibreFranklin-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  }
+  } */
 
 
   @font-face{
     font-family:"Libre Baskerville", serif ;
-    src: url('files/fonts/Libre_Baskerville,PT_Serif/Libre_Baskerville/LibreBaskerville-Regular') 
-    format('truetype');
+    src: url('/files/Fonts/librebaskerville-regular-webfont.woff2') 
+    format('woff2'),
+    url("/files/Fonts/librebaskerville-regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Libre Baskerville", serif ;
-    src: url('files/fonts/Libre_Baskerville,PT_Serif/Libre_Baskerville/LibreBaskerville-Bold') 
-    format('truetype');
+    src: url('/files/Fonts/librebaskerville-italic-webfont.woff') 
+    format('woff2'),
+    url("/files/Fonts/librebaskerville-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Libre Baskerville", serif ;
+    src: url('/files/Fonts/librebaskerville-bold-webfont.woff2') 
+    format('woff2'),
+    url("/files/Fonts/librebaskerville-bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal;
   }
+
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-thin') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-thin-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-thin-webfont.woff") format("woff");
     font-weight: 100;
     font-style: normal;
   }
+
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-thinItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-thinitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-thinitalic-webfont.woff') format("woff");
     font-weight: 100;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-ExtraLight') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-extralight-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-extralight-webfont.woff") format("woff");
     font-weight: 200;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-ExtraLightItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-extralightitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-extralightitalic-webfont.woff') format("woff");
     font-weight: 200;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-Light') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-light-webfont.woff") format("woff");
     font-weight: 300;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-LightItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-lightitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-lightitalic-webfont.woff') format("woff");
     font-weight: 300;
     font-style: italic;
   }
   
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-Regular') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-RegularItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-italic-webfont.woff') format("woff2"),
+    url('/files/Fonts/poppins-italic-webfont.woff') format("woff");
     font-weight: 400;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-Medium') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-medium-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-medium-webfont.woff") format("woff");
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-MediumItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-mediumitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-mediumitalic-webfont.woff') format("woff");
     font-weight: 500;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-SemiBold') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-semibold-webfont.woff") format("woff");
     font-weight: 600;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-SemiBoldItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-semibolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-semibolditalic-webfont.woff') format("woff");
     font-weight: 600;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-Bold') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-BoldItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-bolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-bolditalic-webfont.woff') format("woff");
     font-weight: 700;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-ExtraBold') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-extrabold-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-extrabold-webfont.woff") format("woff");
     font-weight: 800;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-ExtraBoldItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-extrabolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-extrabolditalic-webfont.woff') format("woff");
     font-weight: 800;
     font-style: italic;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-Black') 
-    format('truetype');
+    src: url("/files/Fonts/poppins-black-webfont.woff2") format("woff2"),
+    url("/files/Fonts/poppins-black-webfont.woff") format("woff");
     font-weight: 900;
     font-style: normal;
   }
 
   @font-face{
     font-family:"Poppins", sans-serif ;
-    src: url('files/fonts/Poppins/Poppins-BlackItalic') 
-    format('truetype');
+    src: url('/files/Fonts/poppins-blackitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/poppins-blackitalic-webfont.woff') format("woff");
     font-weight: 900;
     font-style: italic;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Thin') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-thin-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-thin-webfont.woff') format("woff");
     font-weight: 100;
     font-style: normal;
   }
@@ -198,104 +211,104 @@
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-ThinItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-thinitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-thinkitalic-webfont.woff') format("woff");
     font-weight: 100;
     font-style: italic;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-extralight-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-extralight-webfont.woff') format("woff");
     font-weight: 200;
     font-style: normal;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLightItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-extralightitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-extralightitalic-webfont.woff') format("woff");
     font-weight: 200;
     font-style: italic;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Light') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-light-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-light-webfont.woff') format("woff");
     font-weight: 300;
     font-style: normal;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-LightItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-lightitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-lightitalic-webfont.woff') format("woff");
     font-weight: 300;
     font-style: italic;
   }
   
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Regular') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-regular-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-regular-webfont.woff') format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-RegularItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-italic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-italic-webfont.woff') format("woff");
     font-weight: 400;
     font-style: italic;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Medium') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-medium-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-medium-webfont.woff') format("woff");
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-MediumItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-mediumitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-mediumitalic-webfont.woff') format("woff");
     font-weight: 500;
     font-style: italic;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-semibold-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-semibold-webfont.woff') format("woff");
     font-weight: 600;
     font-style: normal;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBoldItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-semibolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-semibolditalic-webfont.woff') format("woff");
     font-weight: 600;
     font-style: italic;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-Bold') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-bold-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-bold-webfont.woff') format("woff");
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face{
     font-family: "IBM Plex Sans", sans-serif;
-    src: url('files/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic') 
-    format('truetype');
+    src: url('/files/Fonts/ibmplexsans-bolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/ibmplexsans-bolditalic-webfont.woff') format("woff");
     font-weight: 700;
     font-style: italic;
   }
@@ -316,7 +329,7 @@ html {
 
 /*FONT*/
 body {
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   line-height: 1.7;
   list-style: none;
@@ -876,7 +889,7 @@ body a:active {
 .design h1,
 .learnings h1,
 .pp-hero h1 {
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   font-size: 2.4rem;
 }
 
@@ -1946,7 +1959,7 @@ Large devices (1024px or larger)
   .design h1,
   .learnings h1,
   .pp-hero h1 {
-    font-family: "poppins";
+    font-family: "poppins", sans-serif;
     font-size: 3.2rem;
   }
 
@@ -2196,7 +2209,7 @@ Large devices (1024px or larger)
 
   .pp-hero h1 {
     font-size: 2.8rem;
-    font-family: "poppins";
+    font-family: "poppins", sans-serif;
   }
 
   .intro,
@@ -2449,7 +2462,7 @@ X-large devices (1440px or larger)
 
   .pp-hero h1 {
     font-size: 3.8rem;
-    font-family: "poppins";
+    font-family: "poppins", sans-serif;
 
   }
 
