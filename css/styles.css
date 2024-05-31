@@ -333,12 +333,18 @@ body {
   box-sizing: border-box;
   line-height: 1.7;
   list-style: none;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   max-width: 100vw;
   margin: 0;
   position: relative;
   overflow-x: hidden;
 }
+
+
+#home{
+background-color: #FFF9CB;
+}
+
 
 #pinnacle_case {
   background-color: #FFF;
@@ -481,11 +487,13 @@ body a:active {
   width: 3.2rem;
   height: 3.2rem;
   stroke: #212529;
-  border: solid #383838 .32rem;
+  border: solid #2e2e2e .32rem;
   border-radius: .8rem;
   padding: .5rem;
 
 }
+
+
 
 
 #close-outline {
@@ -586,20 +594,35 @@ body a:active {
 
 }
 
+img.hero_pic_desktop{
+  display: none;
+}
+
 /* HERO TEXT */
 /* HERO TEXT */
 .hero-text {
   text-align: center;
-  font-family: "Libre Baskerville", serif;
+  font-family: "century schoolbook", serif;
+  font-style: italic;
   margin: 0;
 }
 
+.hero-text-desktop{
+  display: none;
+}
 .hero-text h1 {
-  font-size: 3.2rem;
-  font-weight: 300;
+  font-size: 3.6rem;
   margin: 1rem auto;
+  font-weight: 700;
+  color: #F72C25;  
 }
 
+.hero-text h2{
+  font-size: 3rem;
+  margin: 1rem auto;
+  font-weight: 700;
+  color: #F72C25; 
+}
 .hero p {
   letter-spacing: .8rem;
 }
@@ -615,10 +638,13 @@ body a:active {
 
 /* HERO IMAGE */
 /* HERO IMAGE */
-.hero-section img {
-  max-width: 80vw;
+/* .hero-section img {
+  max-width: 70vw;
+} */
 
-
+img.hero_pic_mobile{
+  max-width: 65vw;
+  transform: translate(0% 0%);  
 }
 
 .scroll img {
@@ -792,8 +818,8 @@ body a:active {
 
 .btn-por-case{
   color: #fff;
-  background-color: #64b9b7;
-  border: solid 0.3rem #64b9b7;
+  background-color: #397A96;
+  border: solid 0.3rem #397A96;
 }
 
 
@@ -872,12 +898,46 @@ a.contact-btn:active {
 }
 
 
-
+#pp-header{
+  background: linear-gradient(336deg, #FFF -31.26%, #84BDFF 2.13%, #2A86AD 94.69%);
+}
 
 .pp-hero {
-  margin: auto auto;
-  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
 }
+
+.mockup{
+  margin: auto auto;
+}
+.mockup img {
+  width: 100%;
+}
+
+
+.pp-text{
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  text-shadow: .01rem .05rem .2rem rgb(0, 0, 0);
+  
+}
+
+.pp-title{
+  color: #fff;
+  text-align: left;
+  text-shadow: .05rem .1rem .4rem rgb(0, 0, 0);
+}
+
+
+.pp-secondary-title{
+  color: #fff;
+}
+
 
 .intro h1,
 .design h1,
@@ -892,20 +952,9 @@ a.contact-btn:active {
 .learnings h2,
 .pp-hero h2 {
   font-size: 1.6rem;
+  margin: 2rem auto;
 }
 
-
-.mockup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
-  margin: auto;
-}
-
-.mockup img {
-  width: 40vw;
-}
 
 .divider {
   background-color: #9ECBFF;
@@ -915,6 +964,10 @@ a.contact-btn:active {
   padding: 3%;
   font-weight: bolder;
 
+}
+
+#first_title{
+  margin-top: 10vh;
 }
 
 .intro,
@@ -961,9 +1014,6 @@ a.contact-btn:active {
   width: 20vw;
 }
 
-.pp-title {
-  text-align: center;
-}
 
 .problem-state h2,
 .problem-state h3 {
@@ -1475,7 +1525,9 @@ a.resume:active {
 
 @media (min-width: 450px) {
 
-
+  .hero-text h1{
+    font-size: 4.2rem;
+  }
 
   .icon-mobile-nav {
     width: 3.6rem;
@@ -1618,6 +1670,20 @@ a.resume:active {
 
   }
 
+
+  .pp-text{
+    padding-left: 3rem;
+  }
+
+  h1.pp-title{
+    font-size: 3.2rem;
+  }
+  
+  
+  p.pp-secondary-title{
+    font-size: 2rem;
+  }
+
 }
 
 /* ==============================
@@ -1648,12 +1714,15 @@ Medium devices (640px and larger)
     min-width: 45%;
     max-width: 80%;
     padding-left: 3%;
-    padding-bottom: 2%;
+    
     padding-top: 2%;
     padding-right: 3%;
-    margin-bottom: 4vh;
+    
   }
 
+  .hero-text h1{
+    font-size: 4.6rem;
+  }
   .hero-section img {
     max-width: 60vw;
   }
@@ -1775,6 +1844,21 @@ Medium devices (640px and larger)
     border-radius: 2rem 0 0 2rem;
   }
 
+
+  .pp-text{
+    padding-left: 4rem;
+  }
+
+  h1.pp-title{
+    font-size: 3.8rem;
+  }
+  
+  
+  p.pp-secondary-title{
+    font-size: 2.4rem;
+  }
+
+
   .social img {
     width: 4vw;
   }
@@ -1789,7 +1873,7 @@ Medium devices (640px and larger)
   }
 
   .hero-section img {
-    max-width: 60vw;
+    max-width: 40vw;
   }
 
 
@@ -1850,17 +1934,26 @@ Large devices (1024px or larger)
   .header-nav-item,
   .header-nav-item a,
   .header-nav-item a:visited {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 300;
     text-decoration: none;
 
   }
 
+  
+
   .header-nav-item a:hover {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 300;
     text-decoration: underline;
     color: #000;
+  }
+
+  #pinnacle_case .header-nav-item a,
+  #pinnacle_case .header-nav-item a:visited,
+  #pinnacle_case .header-nav-item a:hover,
+  #pinnacle_case .header-nav-item a:active{
+    color: #ffffff;
   }
 
   /*MOBILE NAVIGATION*/
@@ -1889,7 +1982,8 @@ Large devices (1024px or larger)
   }
 
   .hero-text h1 {
-    font-size: 2.8rem;
+    font-size: 4.6rem;
+    grid-row: 1 / 4;
   }
 
 
@@ -1955,10 +2049,24 @@ Large devices (1024px or larger)
   /* PINNACLE PAY CASE STUDY */
   /* PINNACLE PAY CASE STUDY */
 
+  .mockup img {
+    width: 80%;
+  }
+
+  h1.pp-title{
+    font-size: 4.2rem;
+  }
+  
+  
+  p.pp-secondary-title{
+    font-size: 2.8rem;
+  }
+
+
+
   .intro h1,
   .design h1,
-  .learnings h1,
-  .pp-hero h1 {
+  .learnings h1 {
     font-family: "poppins", sans-serif;
     font-size: 3.2rem;
   }
@@ -2203,13 +2311,21 @@ Large devices (1024px or larger)
 
   /* PINNACLE PAY CASE STUDY */
   /* PINNACLE PAY CASE STUDY */
-  .pp-hero {
-    width: 60vw;
-  }
+  
+.pp-text{
+  justify-content: center;
+  margin-left: 4rem;
+  
+}
 
-  .pp-hero h1 {
-    font-size: 2.8rem;
-    font-family: "poppins", sans-serif;
+  h1.pp-title{
+    font-size: 4.6rem;
+    text-shadow: .1rem .2rem .3rem rgb(0, 0, 0);
+  }
+  
+  
+  p.pp-secondary-title{
+    font-size: 3rem;
   }
 
   .intro,
@@ -2219,7 +2335,6 @@ Large devices (1024px or larger)
     width: 70vw;
   }
 
- 
 
 
 
@@ -2263,6 +2378,12 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
+@media only screen and (min-width: 1250px){
+  .pp-hero img {
+    width: 35vw;
+  }
+}
+
 @media only screen and (min-width: 1340px) {
 
 
@@ -2456,19 +2577,24 @@ X-large devices (1440px or larger)
     width: 7%;
   }
 
-  .pp-hero {
-    width: 60vw;
-  }
 
-  .pp-hero h1 {
-    font-size: 3.8rem;
-    font-family: "poppins", sans-serif;
-
+  .pp-text{
+    justify-content: center;
+    margin-left: 4rem;
   }
+  
+    h1.pp-title{
+      font-size: 5rem;
+    }
+    
+    
+    p.pp-secondary-title{
+      font-size: 3.2rem;
+    }
 
 
   .pp-hero img {
-    width: 23vw;
+    width: 35vw;
   }
 
   .intro img,
@@ -2695,6 +2821,10 @@ X-large devices (1440px or larger)
     max-width: 88%;
     column-gap: 8rem;
   }
+
+  .pp-hero img {
+    width: 30vw;
+  }
 }
 
 
@@ -2720,12 +2850,25 @@ X-large devices (1440px or larger)
     max-width: 88%;
     column-gap: 8rem;
   }
+
+  .pp-text{
+    margin-left: 8rem;
+  }
+
+  h1.pp-title{
+    font-size: 6rem;
+  }
+  
+  
+  p.pp-secondary-title{
+    font-size: 3rem;
+  }
 }
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   
   .right-bio,
   .left-bio {
@@ -2737,10 +2880,14 @@ Extra-large devices (1920px or larger)
   .left-bio h6 {
     font-size: 1.8rem;
   }
+
+
+.mockup img {
+  width: 25vw;
 }
 
-
-@media (min-width: 2320px) {
+}
+@media only screen and (min-width: 2320px) {
   .header {
     height: auto;
   }
