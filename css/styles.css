@@ -314,6 +314,152 @@
   }
 
 
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-thin-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-thin-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-thinitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-thinitalic-webfont.woff') format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-extralight-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-extralight-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-extralightitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-extralightitalic-webfont.woff') format("woff");
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-light-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-light-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-lightitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-lightitalic-webfont.woff') format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-regular-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-italic-webfont.woff') format("woff2"),
+    url('/files/Fonts/prompt-italic-webfont.woff') format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-medium-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-mediumitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-mediumitalic-webfont.woff') format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-semibold-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-semibold-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-semibolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-semibolditalic-webfont.woff') format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-bold-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-bolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-bolditalic-webfont.woff') format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-extrabold-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-extrabold-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url('/files/Fonts/prompt-extrabolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-extrabolditalic-webfont.woff') format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family:"Prompt";
+    src: url("/files/Fonts/prompt-black-webfont.woff2") format("woff2"),
+    url("/files/Fonts/prompt-black-webfont.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"prompt";
+    src: url('/files/Fonts/prompt-blackitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/prompt-blackitalic-webfont.woff') format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+
 
 /*UNIVERSALS*/
 /*UNIVERSALS*/
@@ -594,12 +740,16 @@ body a:active {
 
 }
 
-img.hero_pic_desktop{
-  display: none;
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* HERO TEXT */
-/* HERO TEXT */
+
+
+/* HERO HEADING */
+/* HERO HEADING */
 .hero-text {
   text-align: center;
   font-family: "century schoolbook", serif;
@@ -623,28 +773,45 @@ img.hero_pic_desktop{
   font-weight: 700;
   color: #F72C25; 
 }
-.hero p {
-  letter-spacing: .8rem;
+
+.hero-text-right h6{
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  color: #2D1E2F;
 }
 
-.right-bio,
-.left-bio,
-.hero-bio,
-.hero-services,
-.hero-hard-skills,
-.hero-soft-skills {
+.hero-text-right p{
+  font-size: 1.8rem;
+}
+
+.work-title{
+  display: none;
+}
+
+h2.work-title-mobile{
+  font-family: "Libre Baskerville", serif;
+  font-size: 3.2rem;
+  color: #2D1E2F;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.design-quote{
   display: none;
 }
 
 /* HERO IMAGE */
 /* HERO IMAGE */
-/* .hero-section img {
-  max-width: 70vw;
-} */
+
+img.hero_pic_desktop{
+  display: none;
+}
 
 img.hero_pic_mobile{
   max-width: 65vw;
   transform: translate(0% 0%);  
+  margin: .1rem auto;
 }
 
 .scroll img {
@@ -668,7 +835,7 @@ img.hero_pic_mobile{
 
 
 /*WORK TITLE*/
-.my-work h2 {
+h2.work-title  {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 300;
@@ -871,8 +1038,9 @@ img.hero_pic_mobile{
   background: linear-gradient(336deg, #85fff5, #70dc45);
   padding: 1.6rem 2.4rem;
   color: #fff;
-  width: 20vw;
+  width: 40vw;
   text-align: center;
+
 }
 
 a.contact-btn:any-link {
@@ -915,6 +1083,16 @@ a.contact-btn:active {
   width: 100%;
 }
 
+#pinnacle_case .read-more{
+  color: #FFF;
+  font-family: "Popping",sans-serif;
+}
+
+#pinnacle_case .read-more h3{
+  font-weight: 500;
+  text-shadow: -.1rem .1rem .3rem rgb(60, 60, 60);
+}
+
 
 .pp-text{
   grid-column: 1 / 2;
@@ -930,12 +1108,23 @@ a.contact-btn:active {
 .pp-title{
   color: #fff;
   text-align: left;
-  text-shadow: .05rem .1rem .4rem rgb(0, 0, 0);
+  text-shadow: -.2rem .3rem .4rem rgb(0, 0, 0);
 }
 
 
 .pp-secondary-title{
   color: #fff;
+}
+
+
+#pinnacle_case .read-more{
+  color: #FFF;
+  font-family: "Popping",sans-serif;
+}
+
+#pinnacle_case .read-more h3{
+  font-weight: 500;
+  text-shadow: -.1rem .1rem .3rem rgb(60, 60, 60);
 }
 
 
@@ -970,6 +1159,7 @@ a.contact-btn:active {
   margin-top: 10vh;
 }
 
+.case-study,
 .intro,
 .design,
 .learnings {
@@ -1442,12 +1632,95 @@ a.resume:active {
   width: 35%;
 }
 
+/*PORTFOLIO CASE STUDY*/
+/*PORTFOLIO CASE STUDY*/
+
+#port-case-header{
+background: linear-gradient(216deg, #E1E2E8 0%, white 100%);
+}
+
+.port-case-hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.port-case-hero-container{
+  display: flex;
+  margin-top: 12rem;
+}
+
+.port-case-text{
+  font-family: "Prompt", sans-serif;
+  color: #161616;
+  margin: 0 2rem 0 6.2rem;
+}
+
+.port-case-title{
+  font-size: 6rem;
+  text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+}
+
+.port-case-secondary-title{
+  font-size: 2.4rem;
+}
+
+.port-case-mockup img{
+  width: 95rem;
+}
+
+.read-more{
+  margin: 4rem auto;
+  font-family: "Prompt", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.read-more img{
+  width: 8rem;
+}
+
+
+
+
+.case-study{
+  margin-top: 4rem;
+}
+
+.overview-icons{
+display: flex;
+width: 100%;
+justify-content: space-between;
+font-family: "Poppins", sans-serif;
+}
+
+.overview-icons h4{
+  font-weight: 600;
+}
+
+.overview-icons img{
+  width: 10rem;
+}
+
+.project,
+.role,
+.tools,
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
 
 
 /* FOOTER */
 /* FOOTER */
 .contact {
-  background-color: #efefef;
+  background-color: #38233a;
   padding-top: 2rem;
   margin-top: 2rem;
   text-align: left;
@@ -1456,10 +1729,10 @@ a.resume:active {
   grid-template-rows: 1fr 2fr;
   align-content: space-evenly;
   align-items: center;
-  border-bottom: .5rem solid #797979;
+  border-bottom: .5rem solid #29192b;
   border-radius: .3rem;
   font-size: 1.6rem;
-
+  color: #e1e1e1;
 }
 
 .footer-logo {
@@ -1505,8 +1778,8 @@ a.resume:active {
   width: 7vw;
 }
 
-.copy {
-  margin-right: 2rem;
+.copyright{
+  grid-column: 2 / 3;
 }
 
 
@@ -1961,48 +2234,76 @@ Large devices (1024px or larger)
     display: none;
   }
 
-
+  /* HERO SECTION */
   /* HERO SECTION */
   .hero-section {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    gap: .5rem;
-    max-width: 85vw;
+    max-width: 95vw;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-top: 6rem;
   }
 
 
-  /* HERO TEXT */
-  .hero-text {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
+  .hero-main{
+    flex-direction: row;
+    max-width: 80vw;
     margin: 0 auto;
-  }
-
-  .hero-text h1 {
-    font-size: 4.6rem;
-    grid-row: 1 / 4;
-  }
-
-
-  .scroll {
-    grid-row: 3 / 4;
     grid-column: 2 / 3;
-    justify-self: center;
-  }
-
-  .scroll img {
-    width: 15rem;
   }
 
 
-  /* HERO IMAGE */
-  .hero-section img {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    max-width: 40vw;
+  img.hero_pic_mobile{
+    display: none;
+  }
+
+  img.hero_pic_desktop{
+    display:inline;
+    max-width: 40rem;
+    z-index: -1;
+  }
+  
+  .hero-text{
+    align-self: flex-end;
+    padding-left: 5%;
+  }
+
+  .hero-text h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: inline;
+    text-align: left;
+    font-size: 6.5rem;
+    padding-left: 2rem;
+  }
+  
+  .hero-text h2{
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+
+  .hero-text-right{
+    grid-column: 3 / 4;
+    font-family: "Poppins", sans-serif;
+    margin-left: 1.5rem;
+    width: 80%;
+  }
+  
+  .hero-text-right h6{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: .5rem;
+  }
+
+  .hero-text-right p{
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  .scroll{
+    grid-column: 1 / 5;
     margin: 0 auto;
   }
 
@@ -2146,6 +2447,10 @@ Large devices (1024px or larger)
     font-size: 10rem;
   }
 
+
+  .contact-btn{
+    width: 30vw;
+    }
 }
 
 
@@ -2169,77 +2474,85 @@ Large devices (1024px or larger)
   /* HERO SECTION */
   .hero-section {
     max-width: 95vw;
-
+    margin-top: 6rem;
   }
 
 
-  .hero-section {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
-
-  .hero-section img {
-    max-width: 22vw;
-  }
-
-  /* HERO TEXT */
-  /* HERO TEXT */
-
-  .hero-bio,
-  .hero-services,
-  .hero-hard-skills,
-  .hero-soft-skills {
-    display: block;
-  }
-
-  .right-bio,
-  .left-bio {
+  .hero-main{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+    grid-column: 2 / 3;
+  }
+
+
+  /* HERO IMAGES */
+  /* HERO IMAGES */
+  img.hero_pic_mobile{
+    display: none;
+  }
+
+  img.hero_pic_desktop{
+    display:inline;
+    max-width: 40rem;
+    z-index: -1;
+  }
+
+
+  /* HERO TEXT */
+  /* HERO TEXT */
+  
+  .hero-text{
+    align-self: flex-end;
+    padding-left: 5%;
+  }
+
+  .hero-text h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: inline;
+    text-align: left;
+    font-size: 6.5rem;
+    padding-left: 2rem;
+  }
+  
+  .hero-text h2{
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+
+  .hero-text-right{
+    grid-column: 3 / 4;
+    font-family: "Poppins", sans-serif;
+    margin-left: 1.5rem;
     width: 80%;
   }
-
-  .left-bio {
-    justify-self: end;
-  }
-
-  .right-bio h6,
-  .left-bio h6 {
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: #818181;
-    font-family: "Poppins", sans-serif;
-    margin: 0 auto 2rem auto;
-  }
-
-  .right-bio p,
-  .left-bio p {
+  
+  .hero-text-right h6{
+    font-weight: 600;
     font-size: 1.8rem;
-    font-weight: 500;
-    color: #000000;
-    font-family: "Libre Baskerville", serif;
-    line-height: 1.4;
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+
+  .hero-text-right p{
+    font-weight: 400;
+    font-size: 2.2rem;
     margin: 0;
   }
 
-
-  .left-bio {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
+  .scroll{
+    grid-column: 1 / 5;
   }
 
-  .right-bio {
-    grid-row: 2 / 3;
-    grid-column: 3 / 4;
-  }
+  
 
 
 
 
+/* WORK SECTION */
+/* WORK SECTION */
 
   .work {
     max-width: 75vw;
@@ -2350,7 +2663,7 @@ Large devices (1024px or larger)
   }
 
   .contact p {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 
 
@@ -2362,10 +2675,109 @@ Large devices (1024px or larger)
     width: 5vw;
   }
 
+  .copyright{
+  font-size: 1.6rem;
+  }
 
 }
 
 @media only screen and (min-width: 1180px) {
+  
+  /* HERO SECTION */
+  .hero-section {
+    display: grid;
+    max-width: 95vw;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-top: 6rem;
+  }
+
+
+  .hero-main{
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    grid-column: 2 / 3;
+  }
+
+
+  img.hero_pic_mobile{
+    display: none;
+  }
+
+  img.hero_pic_desktop{
+    display:inline;
+    max-width: 40rem;
+    z-index: -1;
+  }
+  
+
+/* HERO HEADING */
+/* HERO HEADING */
+
+  .hero-text{
+    align-self: flex-end;
+    padding-left: 5%;
+  }
+
+  .hero-text h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: inline;
+    text-align: left;
+    font-size: 6.5rem;
+    padding-left: 2rem;
+  }
+  
+  .hero-text h2{
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+
+  
+  /* HERO TEXT BLOCKS */
+  .design-quote{
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  h2.design-quote{
+    font-weight: 400;
+    font-size: 2.2rem;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  .hero-text-right{
+    grid-column: 2 / 3;
+    font-family: "Poppins", sans-serif;
+    margin-left: 1.5rem;
+    width: 100%;
+    padding-left: 5%;
+  }
+  
+  .hero-text-right h6{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+
+  .hero-text-right p{
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  .scroll{
+    grid-column: 1 / 5;
+  }
+  
+  
+  
+  
   .footer-logo img {
     width: 6vw;
   }
@@ -2382,10 +2794,16 @@ X-large devices (1440px or larger)
   .pp-hero img {
     width: 35vw;
   }
+  h2.design-quote{
+    max-width: 70%;
+  }
+  
 }
 
 @media only screen and (min-width: 1340px) {
-
+  .header {
+    height: auto;
+  }
 
   .upper-bar {
     margin: 1.5rem 4rem;
@@ -2396,43 +2814,82 @@ X-large devices (1440px or larger)
     width: 4vw;
   }
 
+
+  /* HERO SECTION */
   .hero-section {
-    margin-top: 0;
-    grid-template-columns: 1fr 2fr 1fr;
-    overflow-y: hidden;
-
+    max-width: 95vw;
+    margin-top: 6rem;
   }
 
-  .header {
-    height: auto;
+  .hero-main{
+    display: flex;
+    max-width: 90vw;
+    margin: 0 auto;
+    grid-column: 2 / 3;
   }
 
-  .right-bio,
-  .left-bio {
-    width: 70%;
+
+  img.hero_pic_mobile{
+    display: none;
   }
 
-  .right-bio h6,
-  .left-bio h6 {
-    font-size: 1.6rem;
-}
-.right-bio p,
-  .left-bio p {
-    font-size: 1.8rem;
-}
-
-  .hero-text h1 {
-    font-size: 3.2rem;
+  img.hero_pic_desktop{
+    display:inline;
+    max-width: 40rem;
+    z-index: -1;
+  }
+  
+  .hero-text{
+    align-self: flex-end;
+    padding-left: 5%;
   }
 
-  .hero-section img {
-    max-width: 17vw;
+  .hero-text h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: inline;
+    text-align: left;
+    font-size: 6.5rem;
+    padding-left: 2rem;
+  }
+  
+  .hero-text h2{
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+
+  .hero-text-right{
+    font-family: "Poppins", sans-serif;
+    margin-left: 5%;
+  }
+  
+  .hero-text-right h6{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+
+  h2.design-quote{
+    max-width: 80%;
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+
+
+  .scroll{
+    grid-column: 1 / 5;
+    margin: 0 auto;
   }
 
   .scroll img {
     width: 17rem;
   }
 
+
+  /* WORK SECTION */
+  /* WORK SECTION */
   .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2457,32 +2914,6 @@ X-large devices (1440px or larger)
     flex-direction: column;
   }
 
-  .my-work h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 300;
-    font-family: "prompt", sans-serif;
-    margin-bottom: 0;
-  }
-
-  /* .my-work .work h4 {
-    grid-row: 1 / 2;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 0.8rem;
-    font-family: "prompt", sans-serif;
-    color: #222222;
-    margin-bottom: 0;
-  } */
-
-  /* .my-work h2:hover{
-      transition: 1s;
-      background-clip: text;
-      background: -webkit-linear-gradient(#fff9cc, #fef9ed);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-  } */
 
 
   .work-title h2 {
@@ -2800,9 +3231,9 @@ X-large devices (1440px or larger)
     font-family: "Libre Baskerville", serif;
   }
 
-  .contact p {
+  /* .contact p {
     font-size: 2.4rem;
-  }
+  } */
 
 
   .footer-logo img {
@@ -2817,6 +3248,23 @@ X-large devices (1440px or larger)
 
 
 @media only screen and (min-width: 1480px) {
+  
+  h2.design-quote{
+    max-width: 70%;
+    font-size: 2.6rem;
+    font-weight: 300;
+  }
+
+  img.hero_pic_desktop{
+    max-width: 50rem;
+    }
+    .hero-text h1{
+    font-size: 6.5rem;
+    }
+    /* .hero-text h2{
+    } */
+  
+  
   .work {
     max-width: 88%;
     column-gap: 8rem;
@@ -2835,16 +3283,39 @@ X-large devices (1440px or larger)
     height: auto;
   }
 
-  .hero-section img {
-    max-width: 17vw;
+  img.hero_pic_desktop{
+    max-width: 40rem;
+    }
+
+  h2.design-quote{
+    max-width: 65%;
   }
 
+  .hero-text h1{
+  font-size: 7.2rem;
+  }
+  .hero-text h2{
+    font-size: 3.4rem;
+  }
+
+  /* .hero-text-right{
+    margin-top: 1.4rem;
+  } */
+
+  .hero-text-right h6{
+  font-size: 1.8rem;
+  }
+
+  .hero-text-right p{
+    font-size: 2.4;
+    font-weight: 500;
+    letter-spacing: 1;
+  }
+
+    
  
 
-  .right-bio p,
-  .left-bio p {
-    font-size: 1.8rem;
-  }
+  
 
   .work {
     max-width: 88%;
