@@ -539,7 +539,6 @@ h2 {
 h3 {
   font-size: 2.6rem;
   font-weight: 400;
-
 }
 
 h4 {
@@ -550,7 +549,6 @@ h4 {
 p {
   font-size: 1.8rem;
   line-height: 1.8;
-
 }
 
 a {
@@ -1634,6 +1632,7 @@ a.resume:active {
 
 /*PORTFOLIO CASE STUDY*/
 /*PORTFOLIO CASE STUDY*/
+/*PORTFOLIO CASE STUDY HERO*/
 
 #port-case-header{
 background: linear-gradient(216deg, #E1E2E8 0%, white 100%);
@@ -1647,68 +1646,175 @@ background: linear-gradient(216deg, #E1E2E8 0%, white 100%);
 
 .port-case-hero-container{
   display: flex;
-  margin-top: 12rem;
+  flex-direction: column;
+  margin-top: 4rem;
 }
 
 .port-case-text{
   font-family: "Prompt", sans-serif;
   color: #161616;
-  margin: 0 2rem 0 6.2rem;
+  margin: 0 2rem 0 2rem;
+  text-align: center;
 }
 
 .port-case-title{
-  font-size: 6rem;
+  font-size: 3.2rem;
   text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+  
 }
 
 .port-case-secondary-title{
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
+/* .port-case-mockup{} */
+
 .port-case-mockup img{
-  width: 95rem;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  
 }
 
 .read-more{
   margin: 4rem auto;
   font-family: "Prompt", sans-serif;
-  font-size: 1.8rem;
   text-align: center;
 }
 
+.read-more h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+
 .read-more img{
-  width: 8rem;
+  width: 4rem;
 }
 
 
 
+/*PORTFOLIO CASE STUDY*/
+/*OVERVIEW*/
 
 .case-study{
   margin-top: 4rem;
 }
 
-.overview-icons{
-display: flex;
+.icons-style{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr auto;
 width: 100%;
 justify-content: space-between;
 font-family: "Poppins", sans-serif;
 }
 
-.overview-icons h4{
+.case-study-body{
+  max-width: 85vw;
+}
+
+
+.icons-style h4,
+.icons-style p{
+  font-size: 1.6rem;
+  text-align: center;
+  margin: .4rem;
+}
+
+
+.icons-style{
+  margin: 4rem auto;
+}
+
+.icons-style h4{
   font-weight: 600;
 }
 
-.overview-icons img{
-  width: 10rem;
+.icons-style img{
+  width: 8rem;
+  margin: .4rem;
 }
 
-.project,
-.role,
-.tools,
-.time {
+
+.main-style img{
+  width: 100%;
+}
+
+
+
+/* ICONS ITEMS STYLE */
+.icon-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin: 2rem;
+}
+
+
+/* ICONS GRID LOCATION */
+.project,
+.role{
+  grid-column: 1 / 2;
+}
+
+.tools,
+.time{
+  grid-column: 2 / 3;
+}
+
+
+.project,
+.tools{
+  grid-row: 1 / 2;
+}
+
+.role,
+.time {
+  grid-row: 2 / 3;
+}
+
+
+.test-guidelines img,
+.test-goals img{
+  width: 10rem;
+}
+
+.test-goals h3{
+  margin: .2rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #2f2f2f;
+}
+
+.test-goals h4{
+  margin: .2rem;
+}
+
+.test-goals p {
+  margin: .2rem;
+}
+
+.test-guidelines-card,
+.test-goal-card{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 6rem auto;
+}
+
+
+.test-guidelines-text,
+.test-goals-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.last-card{
+  margin-bottom: 6rem;
 }
 
 
@@ -1826,6 +1932,14 @@ font-family: "Poppins", sans-serif;
   .wl-item2 {
     margin-bottom: 5vh;
   }
+
+
+
+  .port-case-text{
+    margin: 0 3rem;
+    }
+
+
 
   /*ABOUT PAGE*/
   .about-me {
@@ -1957,12 +2071,30 @@ font-family: "Poppins", sans-serif;
     font-size: 2rem;
   }
 
+
+
+.port-case-text{
+  margin: 0 4rem;
+}
+  .port-case-title{
+    font-size: 3.8rem;
+  }
+  .port-case-secondary-title{
+    font-size: 2rem;
+  }
+
+
+
+
+
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  
 
   .logo {
     width: 10vw;
@@ -2071,6 +2203,24 @@ Medium devices (640px and larger)
     font-size: 1.6rem;
   }
 
+
+
+  .introduction{
+    max-width: 80vw;
+  }
+
+
+  .port-case-title{
+    font-size: 4.8rem;
+  }
+  .port-case-secondary-title{
+    font-size: 2rem;
+  }
+
+
+
+
+
   .about-hero h1 {
     font-size: 8rem;
   }
@@ -2099,6 +2249,14 @@ Medium devices (640px and larger)
   .social img {
     width: 5vw;
   }
+
+
+
+
+
+
+
+
 
 }
 
@@ -2443,6 +2601,94 @@ Large devices (1024px or larger)
   } */
 
 
+
+
+
+
+  /* PORTFOLIO CASE STUDY */
+  /* PORTFOLIO HERO */
+  .port-case-hero-container{
+    margin-top: 12rem;
+  }
+  .port-case-text{
+    margin: 0 3rem 0 6.2rem;
+  }
+  .port-case-title{
+    font-size: 6rem;
+    text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+  }
+  
+  .port-case-secondary-title{
+    font-size: 2.2rem;
+  }
+  .port-case-mockup img{
+    width: 80rem;
+    padding-right: 4rem;
+  }
+  .read-more{
+    margin: 8rem auto 4rem auto;
+  }
+
+  .read-more h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+
+  .read-more img{
+    width: 5.5rem;
+  }
+
+
+
+
+
+/* PORTFOLIO CASE STUDY */
+  /* OVERVIEW */
+  .case-study{
+    margin-top: 4rem;
+  }
+
+
+  /* TURNS INTO A ROW DISPLAY */
+  .overview-icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    margin: 4rem auto;
+  }
+
+  .overview-icons img{
+    width: 5rem;
+  }
+
+
+  .overview-icons h4,
+  .overview-icons p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: .4rem;
+  }
+
+
+  /* FROM 2 COLOUMS INTO 3 COLOUMS */
+  .design-process img{
+    width: 7rem;
+  }
+  
+  .design-process{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+
+
+
+
+
+
+
   .about-hero h1 {
     font-size: 10rem;
   }
@@ -2650,12 +2896,129 @@ Large devices (1024px or larger)
 
 
 
+  /* PORTFOLIO CASE STUDY */
+   /* PORTFOLIO CASE STUDY */
+
+
+   .port-case-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .port-case-hero-container{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .port-case-text{
+    margin: 0 2rem 0 6.2rem;
+    text-align: left;
+  }
+  .port-case-title{
+    font-size: 4.2rem;
+    text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+  }
+  
+  .port-case-secondary-title{
+    font-size: 1.8rem;
+  }
+  .port-case-mockup img{
+    width: 65rem;
+    padding-right: 4rem;
+  }
+
+  .read-more{
+    margin: 6rem auto 4rem auto;
+  }
+  .read-more h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .read-more img{
+    width: 5rem;
+  }
 
 
 
+
+  /* PORTFOLIO CASE STUDY */
+  /* OVERVIEW */
+  .case-study{
+    margin-top: 4rem;
+  }
+
+  .case-study-body{
+    max-width: 70vw;
+  }
+
+  .overview-icons h4,
+  .overview-icons p{
+    margin: .5rem;
+  }
+
+  .overview-icons{
+    margin: 4rem auto;
+  }
+
+  .design-process img{
+    width: 8rem;
+  }
+  .overview-icons img{
+    width: 5rem;
+  }
+
+
+  .main-example-style{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .main-style h4{
+    margin: .5rem;
+  }
+
+
+
+  .main-example-style img{
+    width: 95%;
+    align-self: center;
+    margin: 4rem auto;
+  }
+
+  
+  .test-guidelines-card,
+  .test-goal-card{
+  flex-direction: row;
+  align-items: center;
+  gap: 6rem;
+  margin: 12rem 6rem;
+  }
+
+  .last-card{
+    margin-bottom: 6rem;
+  }
+
+
+
+
+
+
+
+
+  /* ABOUT ME PAGE */
+  /* ABOUT HERO */
   .about-hero h1 {
     font-size: 12rem;
   }
+
+
+   /* FOOTER */
+  /* FOOTER */
 
   .footer-header {
     font-size: 3.2rem;
@@ -2774,6 +3137,43 @@ Large devices (1024px or larger)
   .scroll{
     grid-column: 1 / 5;
   }
+
+
+
+  /* PORTFOLIO CASE STUDY */
+   /* PORTFOLIO CASE STUDY */
+  .port-case-hero-container{
+    margin-top: 12rem;
+  }
+  .port-case-text{
+    margin: 0 2rem 0 6.2rem;
+  }
+  .port-case-title{
+    font-size: 4.8rem;
+    text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+  }
+  
+  .port-case-secondary-title{
+    font-size: 2rem;
+  }
+  .port-case-mockup img{
+    width: 70rem;
+    padding-right: 4rem;
+  }
+
+  .read-more{
+    margin: 6rem auto 4rem auto;
+  }
+  .read-more h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .read-more img{
+    width: 5rem;
+  }
+
+
   
   
   
@@ -3162,7 +3562,84 @@ X-large devices (1440px or larger)
 
 
 
+  /* PORTFOLIO CASE STUDY */
+  /* PORTFOLIO HERO */
+  .port-case-hero-container{
+    margin-top: 12rem;
+  }
+  .port-case-text{
+    margin: 0 3rem 0 6.2rem;
+  }
+  .port-case-title{
+    font-size: 6rem;
+    text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+  }
+  
+  .port-case-secondary-title{
+    font-size: 2.2rem;
+  }
+  .port-case-mockup img{
+    width: 80rem;
+    padding-right: 4rem;
+  }
+  .read-more{
+    margin: 8rem auto 4rem auto;
+  }
 
+  .read-more h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+
+  .read-more img{
+    width: 5.5rem;
+  }
+
+
+  /* PORTFOLIO CASE STUDY */
+  /* OVERVIEW */
+  .case-study{
+    margin-top: 4rem;
+  }
+
+  .case-study-body{
+    max-width: 60vw;
+  }
+
+  .overview-icons{
+  width: 100%;
+  }
+
+  .overview-icons h4,
+  .overview-icons p{
+    margin: .5rem;
+  }
+
+  .overview-icons{
+    margin: 6rem auto;
+  }
+
+  .design-process img{
+    width: 9rem;
+  }
+  .overview-icons img{
+    width: 6rem;
+    margin-top: 1rem;
+  }
+
+  .main-example-style img{
+    width: 80%;
+  }
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+/* ABOUT HERO */
   .about-hero h1 {
     font-size: 16rem;
     margin: 7rem auto;
@@ -3225,7 +3702,8 @@ X-large devices (1440px or larger)
   }
 
 
-
+  /* FOOTER */
+  /* FOOTER */
   .footer-header {
     font-size: 3.2rem;
     font-family: "Libre Baskerville", serif;
@@ -3334,23 +3812,73 @@ X-large devices (1440px or larger)
   p.pp-secondary-title{
     font-size: 3rem;
   }
+
+
+  /* PORTFOLIO CASE STUDY */
+  /* PORTFOLIO HERO */
+  .port-case-hero-container{
+    margin-top: 12rem;
+  }
+  .port-case-text{
+    margin: 0 2rem 0 6.2rem;
+  }
+  .port-case-title{
+    font-size: 6rem;
+    text-shadow: -.2rem .3rem .4rem rgb(160, 160, 160);
+  }
+  
+  .port-case-secondary-title{
+    font-size: 2.4rem;
+  }
+  .port-case-mockup img{
+    width: 95rem;
+  }
+
+  .read-more{
+    margin: 6rem auto 4rem auto;
+  }
+  .read-more h3{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .read-more img{
+    width: 6.5rem;
+  }
+
+ 
+
+
+  /* PORTFOLIO CASE STUDY */
+  /* OVERVIEW */
+  .case-study{
+    margin-top: 4rem;
+  }
+
+
+  .design-process img{
+    width: 10rem;
+  }
+  .overview-icons img{
+    width: 8rem;
+  }
+
+  .main-example-style img{
+    width: 85%;
+  }
+
 }
+
+
+
+
+
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
   
-  .right-bio,
-  .left-bio {
-    width: 60%;
-  }
-
-
-  .right-bio h6,
-  .left-bio h6 {
-    font-size: 1.8rem;
-  }
 
 
 .mockup img {
