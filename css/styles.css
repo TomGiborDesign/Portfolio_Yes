@@ -1741,6 +1741,18 @@ font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
+.main-style{
+  margin: 8rem auto;
+}
+
+.main-style h3{
+  margin: 4rem auto 1.2rem auto;
+}
+
+.main-style p {
+  margin: 0 auto 4rem auto;
+}
+
 
 
 /* ICONS ITEMS STYLE */
@@ -1781,21 +1793,31 @@ font-family: "Poppins", sans-serif;
   width: 10rem;
 }
 
+.portfolio-learning h3,
+.test-guidelines h3,
 .test-goals h3{
-  margin: .2rem;
-  font-weight: 700;
+  margin: .4rem;
+  font-weight: 5600;
   font-size: 1.6rem;
-  color: #2f2f2f;
+  color: #4a4a4a;
 }
 
+
+.portfolio-learning h4,
+.test-guidelines h4,
 .test-goals h4{
   margin: .2rem;
+  font-weight: 600;
 }
 
+
+.portfolio-learning p,
+.test-guidelines p,
 .test-goals p {
   margin: .2rem;
 }
 
+.learning-card,
 .test-guidelines-card,
 .test-goal-card{
   display: flex;
@@ -1804,7 +1826,7 @@ font-family: "Poppins", sans-serif;
   margin: 6rem auto;
 }
 
-
+.learning-text,
 .test-guidelines-text,
 .test-goals-text{
   display: flex;
@@ -1813,10 +1835,30 @@ font-family: "Poppins", sans-serif;
 
 }
 
+.first-card{
+  margin-top: 4rem;
+}
+
 .last-card{
   margin-bottom: 6rem;
 }
 
+
+.large-photo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+
+.large-photo-container img{
+  width: 40rem;
+}
+
+
+.learning-card img{
+  width: 12rem;
+}
 
 
 
@@ -2982,6 +3024,9 @@ Large devices (1024px or larger)
     margin: .5rem;
   }
 
+  .main-style{
+    margin: 10rem auto;
+  }
 
 
   .main-example-style img{
@@ -2990,7 +3035,7 @@ Large devices (1024px or larger)
     margin: 4rem auto;
   }
 
-  
+  .learning-card,
   .test-guidelines-card,
   .test-goal-card{
   flex-direction: row;
@@ -3004,7 +3049,17 @@ Large devices (1024px or larger)
   }
 
 
+  .large-photo-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    justify-items: center;
+  }
 
+  .large-photo-container img{
+    width: 40rem;
+  }
 
 
 
@@ -3632,7 +3687,9 @@ X-large devices (1440px or larger)
     width: 80%;
   }
 
-
+  .first-card{
+    margin-top: 4rem;
+  }
 
 
 
