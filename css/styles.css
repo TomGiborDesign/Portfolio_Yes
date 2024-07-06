@@ -3235,6 +3235,8 @@ Large devices (1024px or larger)
   /* HERO SECTION */
   h2.front-heading{
     transform: translateX(3.5rem);
+    font-size: 15rem;
+    letter-spacing: 3.5vw;
   }
 
 
@@ -3603,17 +3605,27 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1250px){
+  
+  .hero-main{
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  img.hero_pic{
+    width: 24rem;
+  }
+  
+  
   h2.back-heading{
-    letter-spacing: 1.5rem;
+    letter-spacing: 2rem;
+    font-size: 12rem;
  }
 
  .back-heading-container{
-  width: 65rem;
+  width: 70rem;
+  transform: translateY(6rem);
  }
 
-  h2.front-heading{
-    letter-spacing: 4.5vw;
-  }
+  
   
   
   .pp-hero img {
@@ -3656,10 +3668,20 @@ X-large devices (1440px or larger)
   }
 
 
+  img.hero_pic{
+    width: 25rem;
+  }
+
+  h1.hero-quote{
+    font-size: 6rem;
+  }
+
   /* HERO SECTION */
   /* HERO SECTION */
   h2.front-heading{
     transform: translateX(4rem);
+    font-size: 17rem;
+  
   }
 
   
@@ -4124,14 +4146,9 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1480px) {
   
 
-  img.hero_pic_desktop{
-    max-width: 50rem;
-    }
-    .hero-text h1{
-    font-size: 6.5rem;
-    }
-    /* .hero-text h2{
-    } */
+  img.hero_pic{
+    width: 26rem;
+  }
   
   
   .work {
@@ -4152,17 +4169,28 @@ X-large devices (1440px or larger)
     height: auto;
   }
 
+  .hero-main{
+    margin: 0 auto;
+  }
 
   /* .hero-text-right{
     margin-top: 1.4rem;
   } */
 
+  img.hero_pic{
+    width: 27rem;
+  }
+
   h2.back-heading{
-    letter-spacing: 2rem;
+    letter-spacing: 3rem;
+    font-size: 12rem;
+    font-weight: 700;
  }
 
  .back-heading-container{
-  width: 75rem;
+  width: 85rem;
+  transform: translateY(6rem);
+  
  }
 
 
