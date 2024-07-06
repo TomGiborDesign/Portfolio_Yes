@@ -459,6 +459,59 @@
   }
 
 
+  @font-face{
+    font-family: "Restora";
+    src: url('/files/Fonts/restora-thinitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/restora-thinitalic-webfont.woff') format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family: "Restora";
+    src: url('/files/Fonts/restora-extralight-webfont.woff2') format("woff2"),
+    url('/files/Fonts/restora-extralight-webfont.woff') format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: "Restora";
+    src: url('/files/Fonts/restora-regular-webfont.woff2') format("woff2"),
+    url('/files/Fonts/restora-regular-webfont.woff') format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: "Restora";
+    src: url('/files/Fonts/restora-regularitalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/restora-regularitalic-webfont.woff') format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  
+@font-face{
+    font-family: "Restora";
+    src: url('/files/Fonts/restora-bold-webfont.woff2') format("woff2"),
+    url('/files/Fonts/restora-bold-webfont.woff') format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: "Restora";
+    src: url('/files/Fonts/restora-bolditalic-webfont.woff2') format("woff2"),
+    url('/files/Fonts/restora-bolditalic-webfont.woff') format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+
+
+
+
 
 
 /*UNIVERSALS*/
@@ -470,6 +523,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
 }
 
@@ -488,7 +542,7 @@ body {
 
 
 #home{
-background-color: #FFF9CB;
+background-color: #FFF;
 }
 
 
@@ -499,7 +553,7 @@ background-color: #FFF9CB;
 
 #about-me {
   width: 100vw;
-  background-color: #FFF9CB;
+  background-color: #FFF;
 }
 
 
@@ -595,7 +649,7 @@ body a:active {
 .upper-bar {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2.5rem 0rem 2.5rem;
+  padding: 2rem 2rem 0rem 2.5rem;
   overflow-x: hidden;
 }
 
@@ -604,7 +658,7 @@ body a:active {
 }
 
 .logo {
-  width: 15vw;
+  width: 6rem;
   margin: 0;
   padding: .5rem 0 0 0;
 }
@@ -618,8 +672,7 @@ body a:active {
 /*MOBILE NAVIGATION-CLOSED*/
 .btn-mobile-nav {
   border: none;
-
-  position: fixed;
+  /* position: fixed; */
   right: 2.8rem;
   top: 3.1rem;
   background: none;
@@ -721,109 +774,215 @@ body a:active {
 }
 
 
+/*HERO SECTION*/
+/*HERO SECTION*/
 
-
-/* HERO SECTION */
-/* HERO SECTION */
-.hero-section {
-  display: flex;
-  flex-direction: column;
+.hero-main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 2rem;
+  width: 92vw;
+  margin: 2rem auto;
   align-items: center;
-  min-height: fit-content;
-  gap: 4rem;
-  max-width: 80vw;
-  align-items: center;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-
+  justify-items: center;
+  height: 57vh;
+  margin-top: 0;
 }
 
-.hero-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-/* HERO HEADING */
-/* HERO HEADING */
-.hero-text {
+h1.hero-quote{
+  color: #4F7BE9;
+  grid-row: 1 / 2;
   text-align: center;
-  font-family: "century schoolbook", serif;
-  font-style: italic;
-  margin: 0;
+  text-shadow: 0px 1px 0px #81D7FB;
+  font-family: Restora;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.514%; /* 7.3134rem */
+  letter-spacing: 0.14rem;
+  z-index: 3;
+  align-self: self-start;
 }
 
-.hero-text-desktop{
-  display: none;
-}
-.hero-text h1 {
-  font-size: 3.6rem;
-  margin: 1rem auto;
-  font-weight: 700;
-  color: #F72C25;  
+img.hero_pic{
+  width: 20rem;
+  z-index: 2;
+  grid-row: 2 / 4;
 }
 
-.hero-text h2{
-  font-size: 3rem;
-  margin: 1rem auto;
-  font-weight: 700;
-  color: #F72C25; 
+
+
+
+h2.back-heading{
+display: inline-block;
+text-align: center;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #AEC9E6;
+color: #ffffff00;
+font-family: Restora;
+font-size: 4rem;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+letter-spacing: .5rem;
+margin-top: 0;
+margin: 0;
 }
 
+
+.back-heading-container{
+  display: flex;
+  width: 24rem;
+  justify-content: space-between;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  z-index: 0;
+  /* transform: translateY(-3rem); */
+}
+
+
+h2.front-heading{
+color: #7091E4;
+text-align: center;
+text-shadow: 0px 1px 0px #81D7FB;
+font-family: Restora;
+font-size: 5rem;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+letter-spacing: .7rem;
+grid-column: 1 / 4;
+grid-row: 3 / 4;
+z-index: 1;
+margin: 0;
+/* transform: translateY(-3rem); */
+}
+
+
+.back-and-front-heading-container{
+  align-self: self-end;
+  grid-row: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.hero-text{
+  display: flex;
+  width: 85vw;
+  margin: .5rem auto;
+  gap: 2.5rem;
+}
+
+
+.hero-text-left,
+.hero-text-right{
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 20rem;
+}
+
+.hero-text-right{
+  max-width: 17rem;
+}
+
+
+
+.hero-text-left h6,
 .hero-text-right h6{
-  font-size: 1.6rem;
-  margin-bottom: 0;
-  color: #2D1E2F;
-}
-
-.hero-text-right p{
-  font-size: 1.8rem;
-}
-
-.work-title{
-  display: none;
-}
-
-h2.work-title-mobile{
-  font-family: "Libre Baskerville", serif;
-  font-size: 3.2rem;
-  color: #2D1E2F;
+  color: #8192A6;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
+  margin: .5rem 0;
+}
+
+.hero-text-left p,
+.hero-text-right li{
+  font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.4179rem;
+letter-spacing: 0.024rem;
+}
+
+
+ul.services-text{
+  padding-left: 1rem;
+}
+
+
+.contact-button{
+display: flex;
+width: 100%;
+padding: 1.2rem 2rem;
+justify-content: center;
+align-items: center;
+gap: 0.8rem;
+border-radius: 0.7rem;
+background: #369EE9;
+}
+
+
+a.contact-button:any-link{
+color: #FFF;
+text-align: center;
+font-family: "Poppins";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.02rem;
+}
+
+#megaphone{
+  display: none;
+}
+
+div.scroll{
+  margin: 0 auto;
+  align-content: center;
   text-align: center;
-
 }
 
-.design-quote{
+a.down-arrow{
+  display: inline-block;
+}
+
+img.down-arrow{
+  margin: 0 auto;
+}
+
+
+#scroll-down{
+  font-size: 1rem;
   display: none;
 }
 
-/* HERO IMAGE */
-/* HERO IMAGE */
-
-img.hero_pic_desktop{
-  display: none;
-}
-
-img.hero_pic_mobile{
-  max-width: 65vw;
-  transform: translate(0% 0%);  
-  margin: .1rem auto;
-}
-
-.scroll img {
-  width: 15rem;
+.scroll img{
+  width: 10rem;
+  margin: 0 auto;
+  transform: translate(-.5rem, -1.5rem);
 }
 
 
-.down-arrow{
-  transition: 500ms;
-}
+
+
 
 /*WORK SECTION*/
 /*WORK SECTION*/
+#my-work{
+  border-top: .8rem solid #eaeaea;
+  background-color: #FAFAFA;
+  padding-bottom: 1.5rem;
+}
+
 .work {
   display: flex;
   flex-direction: column;
@@ -833,21 +992,30 @@ img.hero_pic_mobile{
   padding-left: 2rem;
   padding-right: 2rem;
 
-
 }
 
 
 
 /*WORK TITLE*/
+.work-title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  grid-column: 1 / 3;
+  margin-bottom: 4rem;
+}
+
 h2.work-title  {
   text-align: center;
   font-size: 2.4rem;
-  font-weight: 300;
-  font-family: "prompt", sans-serif;
-  color: #343434e8;
-  margin-bottom: 0;
-  margin-bottom: 2.4rem;
-  /* grid-row: 1 / 2; */
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Restora", sans-serif;
+  color: #161616e8;
+  margin-bottom: .4rem;
+  margin-top: 6rem;
+  
 
 }
 
@@ -863,10 +1031,6 @@ h2.work-title  {
 }
 
 
-.work-title {
-  margin-bottom: 5vh;
-
-}
 
 /*WORK CARD*/
 /*WORK CARD*/
@@ -889,6 +1053,9 @@ h2.work-title  {
   position: relative;
 }
 
+.wl-item-david{
+  display: none;
+}
 
 
 .shading-overlay1{
@@ -1024,27 +1191,27 @@ h2.work-title  {
 }
 
 .btn{
-  background-color: #5170be;
-  border: solid 0.3rem #5170be;
+  background-color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 .btn-ac {
   color: #fff;
-  background-color: #DA7733;
-  border: solid 0.3rem #DA7733;
+  background-color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 
 .btn-por-case{
   color: #fff;
-  background-color: #397A96;
-  border: solid 0.3rem #397A96;
+  background-color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 .btn-david{
   color: #2c2c2c;
-  background-color: #FFD14C;
-  border: solid 0.3rem #FFD14C;
+  background-color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 .btn-david:visited,
@@ -1070,23 +1237,23 @@ h2.work-title  {
 }
 
 .btn-david:hover{
-  color: #FFD14C;
-  border: solid 0.3rem #FFD14C;
+  color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 .btn:hover{
-  color: #004f9e;
-  border: solid 0.3rem #0066cc;
+  color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 .btn-ac:hover {
-  color: #DA7733;
-  border: solid 0.3rem #DA7733;
+  color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 .btn-por-case:hover{
-  color: #64b9b7;
-  border: solid 0.3rem #64b9b7;
+  color: #369EE9;
+  border: solid 0.3rem #369EE9;
 }
 
 
@@ -1568,6 +1735,14 @@ h2.work-title  {
 
 /*ABOUT PAGE*/
 /*ABOUT HERO*/
+
+.about{
+  display: flex;
+  flex-direction: column;
+  width: 90% 
+}
+
+
 .about-hero {
   display: flex;
   flex-direction: column;
@@ -1580,16 +1755,29 @@ h2.work-title  {
 /*ABOUT HERO TITLE*/
 .about-hero h1 {
   font-size: 5rem;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Restora", serif;
   font-weight: 500;
   text-align: center;
+  color: #7091E4;
+  text-shadow: 0px 2px 0px #81D7FB;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.about-hero h2{
+  font-size: 3rem;
+  font-family: "Restora", serif;
+  font-weight: 500;
+  text-align: center;
+  color: #7091E4;
+  text-shadow: 0px 2px 0px #81D7FB;
+  margin-bottom: 0;
 }
 
 
 /*SEPERATION LINE STYLING*/
 .divide-line {
   display: flex;
-  width: 60vw;
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
@@ -1619,24 +1807,48 @@ h2.work-title  {
 
 /*RESUME BUTTON*/
 .resume {
-  border: none;
-  border-radius: 5rem;
-  background: linear-gradient(177deg, white 0%, #66F792 29%, #00c03a 100%);
-  padding: 1.6rem 2.4rem;
-  color: #fff;
-  margin: 1rem auto;
+  display: flex;
+  width: 90%;
+  padding: 1.2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 1.2rem;
+  background: #369EE9;
+  margin: 3rem auto;
+  transition: .4s;
+}
+
+#download-resume{
+  width: 2rem;
 }
 
   a.resume:any-link {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #3d3d3d;
+  font-size: 1.4rem;
+  font-weight:400;
+  color: #fff;
+  text-decoration: none;
+  transition: .4s;
 }
 
-a.resume:visited,
-a.resume:hover,
+a.resume:visited{
+  text-decoration: none;
+  color: #fff;
+}
+
+a.resume:hover{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .2rem;
+    transition: .4s;
+    font-size:1.5rem;
+}
+
+
 a.resume:active {
   text-decoration: none;
+  color: #fff;
+
 }
 
 /*ABOUT SECTION*/
@@ -1663,6 +1875,7 @@ a.resume:active {
   justify-content: center;
   font-size: 1.6rem;
 }
+
 
 
 .experience img {
@@ -1904,115 +2117,160 @@ font-family: "Poppins", sans-serif;
 }
 
 
+  /* CONTACT FORM */
+  /* CONTACT FORM */
+  #instagram-link,
+  #on-the-phone{
+    display: none;
+  }
+  
+
+  #footer{
+    background: linear-gradient(3deg, rgba(55, 72, 217, 0.14) 59.19%, rgba(46, 151, 184, 0.20) 97.65%), linear-gradient(40deg, rgba(62, 220, 255, 0.20) 50%, rgba(81, 132, 231, 0.20) 74.77%), linear-gradient(165deg, #4384B3 -3.58%, #B4B7F9 70.4%);
+  }
+
+  #contact-form{
+    padding: 2rem 4rem;
+    height:110vh;
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .contact-form h2{
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .contact-form h4{
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    margin: 0 0;
+  }
 
 
+  .fill-in-block{
+    border: none;
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+    border-bottom: 2px solid #ffffffb1;
+    background: rgba(217, 217, 217, 0);
+    height: 4rem;
+    margin-right: 2rem;
+    width: 35rem;
+  }
+
+
+  input.fill-in-block:focus,
+  textarea.fill-in-block-big:focus{
+    background: rgba(217, 217, 217, 0.21);
+    border: none;
+    border-bottom: 2px solid #ffffffb1;
+    box-shadow: 0px 0px 0px #ffffff00;
+    outline: none;
+  }
+
+
+  .fill-in-block:hover,
+  .fill-in-block-big:hover{
+    background: rgba(217, 217, 217, 0.21);
+    transition: .4s;
+  }
+
+  
+
+
+  
+
+  .fill-in-block-big{
+    border: none;
+    border-radius: 0.7rem 0.7rem 0rem 0rem;
+    border-bottom: 2px solid #ffffffb1;
+    background: rgba(217, 217, 217, 0);
+    height: 22rem;
+    margin-right: 2rem;
+    width: 35rem;
+  }
+
+  
+
+
+  .form-block-unit h3{
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin:0;
+    margin-bottom: .5rem;
+
+  }
+
+
+  .contact-form button{
+    display: flex;
+    width: 35rem;
+    height: 6.3rem;
+    padding: 1.5rem 3rem 1.5rem 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    flex-shrink: 0;
+    border-radius: 3.5rem;
+    border: 3px solid #FFF;
+    background-color: #356eb800;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    cursor:pointer;
+    position: relative;
+    transition: .4s;
+  }
+
+
+
+  .contact-form button:hover{
+    letter-spacing: .55rem;
+    transition: .4s;
+    font-size:1.75rem;
+  }
+
+  
 
 
 /* FOOTER */
 /* FOOTER */
-.contact {
-  background-color: #1e0c20;
-  padding-top: 2rem;
-  margin-top: 2rem;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 2fr;
-  align-content: space-evenly;
-  align-items: center;
-  border-bottom: 1rem solid #3e2f41;
-  border-top: 1.2rem solid #403442;
-  border-radius: .3rem;
-  font-size: 1.6rem;
-  color: #ffffff;
-}
 
-/* CONTACT ME BUTTON */
-.contact-btn-container{
-  margin: 2rem;
+.copyrights-container{
   display: flex;
-}
-
-.contact-btn{
-  border: none;
-  border-radius: 5rem;
-  background: linear-gradient(177deg, white 0%, #66F792 29%, #00c03a 100%);
-  padding: 1.6rem 2.4rem;
-  color: #fff;
-  width: 50vw;
-  text-align: center;
-
-}
-
-a.contact-btn:any-link {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #3d3d3d;
-}
-
-a.contact-btn:visited,
-a.contact-btn:hover,
-a.contact-btn:active {
-  text-decoration: none;
-}
-
-
-.footer-logo {
-  align-self: center;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  padding: 0;
-  margin: auto auto;
-}
-
-.footer-logo img {
-  width: 20vw;
-}
-
-.footer-header {
-  font-size: 1.6rem;
-  font-weight: 500;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.footer-text {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  margin-right: 2rem;
-}
-
-.contact p {
-  font-size: 1.6rem;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  gap:2rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .social {
   display: flex;
-  flex-direction: column;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  padding: 0;
-  margin: auto auto;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .social img {
-  width: 9vw;
+  width: 3rem;
 }
 
-.copyright{
-  grid-column: 2 / 3;
+p.copy{
+  margin-bottom: .5rem;
+  color: #FFF;
+  font-size: 1.2rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2020,9 +2278,61 @@ a.contact-btn:active {
 
 @media (min-width: 450px) {
 
-  .hero-text h1{
-    font-size: 4.2rem;
+  /*HERO SECTION*/
+  /*HERO SECTION*/
+
+  h1.hero-quote{
+    font-size: 3.6rem;
+    margin-top: 0;
   }
+
+  h2.back-heading{
+    font-size: 5.5rem;
+    -webkit-text-stroke-color: #AEC9E6
+  }
+
+  h2.front-heading{
+    font-size: 7rem;
+  }
+
+  .back-heading-container{
+    width: 33rem;
+    transform: translateY(3rem);
+  }
+
+  .contact-button{
+    width: 19rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  a.contact-button:any-link{
+    font-size: 1.2rem;
+  }
+
+  #megaphone{
+    display: inline-block;
+    margin-right: -5px;
+  }
+
+  .hero-text-left h6,
+  .hero-text-right h6{
+    font-size: 1.3rem;
+  }
+  .hero-text-left p,
+  .hero-text-right li{
+    font-size: 1.2rem;
+  }
+
+  .hero-text{
+    justify-content: space-between;
+    margin: 0 4rem;
+  }
+
+
+
 
   .icon-mobile-nav {
     width: 3.6rem;
@@ -2066,18 +2376,28 @@ a.contact-btn:active {
     font-size: 6.5rem;
   }
 
+  .about-hero h2{
+    font-size: 3.5rem;
+    }
 
-  .footer-logo img {
-    width: 10vw;
-  }
 
-  .social img {
-    width: 8vw;
-  }
+
+
+  
 
 }
 
 @media only screen and (min-width: 520px) {
+
+
+  .hero-text{
+    display: flex;
+    width: 85vw;
+    margin: .5rem auto;
+    gap: 4rem;
+  }
+
+
 
   .logo {
     width: 12vw;
@@ -2165,9 +2485,10 @@ a.contact-btn:active {
 
   .resume {
     padding: 1.6rem 2.4rem;
-    border-radius: 8rem;
     margin: 4rem auto;
   }
+
+
 
 
   .pp-text{
@@ -2207,42 +2528,15 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 
   
-
+/* HEADER */
   .logo {
-    width: 10vw;
+    width: 8rem;
   }
 
 
-  .hero {
-    margin-top: 5vh;
-    padding-top: 12%;
-    padding-bottom: 4%;
+/* HERO SECTION */
+/* HERO SECTION */
 
-  }
-
-  .hero-section {
-    max-width: 80vw;
-  }
-
-  .hero-text {
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    min-width: 45%;
-    max-width: 80%;
-    padding-left: 3%;
-    
-    padding-top: 2%;
-    padding-right: 3%;
-    
-  }
-
-  .hero-text h1{
-    font-size: 4.6rem;
-  }
-  .hero-section img {
-    max-width: 60vw;
-  }
 
 
 
@@ -2307,9 +2601,32 @@ Medium devices (640px and larger)
 
 
 
+  .resume {
+    width: 75%;
+      gap: 3rem;
+  }
+  
+
+  a.resume:any-link {
+    font-size: 1.6rem;
+  }
+
+  a.resume:hover{
+    letter-spacing: .25rem;
+  }
+
+
+
+
+
+
 
   .about-hero h1 {
     font-size: 8rem;
+  }
+
+  .about-hero h2{
+    font-size: 4.5rem;
   }
 
   .about h3 {
@@ -2320,7 +2637,6 @@ Medium devices (640px and larger)
   }
 
   .about p {
-    width: 60vw;
     font-size: 2.4rem;
     line-height: 2;
     font-weight: 400;
@@ -2329,13 +2645,22 @@ Medium devices (640px and larger)
   }
 
 
-  .footer-logo img {
-    width: 10vw;
-  }
 
-  .social img {
-    width: 7vw;
-  }
+
+
+
+  #contact-form{
+    padding: 2rem 4rem;
+      }
+    
+      .contact-form h2{
+    font-size: 3.2rem;
+    }
+     .contact-form h4{
+     font-size: 1.6rem;
+    }
+
+
 
 
 
@@ -2348,6 +2673,78 @@ Medium devices (640px and larger)
 }
 
 @media only screen and (min-width: 680px) {
+  
+  /*HERO SECTION*/
+  /*HERO SECTION*/
+  .hero-main{
+    grid-auto-rows: 8rem;
+    height: auto;
+  } 
+    
+
+
+  h1.hero-quote{
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  img.hero_pic{
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    transform: translateY(2.5rem);
+  }
+
+  .back-heading-container{
+  width: 46rem;
+  }
+
+  h2.back-heading{
+    font-size: 7.5rem;
+    transform: translateY(2.5rem);
+  }
+
+
+  h2.front-heading{
+  font-size: 8.5rem;
+  letter-spacing: 4.3vw;
+  transform: translatex(2rem);
+  }
+
+  .back-and-front-heading-container{
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+    align-self: center;
+    transform: translateY(1rem);
+  }
+
+
+  .hero-text{
+    width: 80vw;
+  }
+
+
+  #scroll-down{
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 4rem;
+  }
+
+  .scroll img{
+    margin-top: 0;
+    padding-top: 0;
+    width: 14rem;
+    
+  }
+
+
+
+
+
+
+
 
   .wl-item-david,
   .wl-item1,
@@ -2379,22 +2776,16 @@ Medium devices (640px and larger)
   }
 
 
-  .social img {
-    width: 6vw;
-  }
-
-
 }
 
 
 @media only screen and (min-width: 730px) {
-  .hero-section {
-    max-width: 82vw;
-  }
+  
+  
+  
+  
 
-  .hero-section img {
-    max-width: 40vw;
-  }
+
 
 
   .key-findings img {
@@ -2404,13 +2795,9 @@ Medium devices (640px and larger)
 
 
 
-  .footer-logo img {
-    width: 7vw;
-  }
+  
 
-  .social img {
-    width: 5vw;
-  }
+  
 
 }
 
@@ -2419,9 +2806,54 @@ Large devices (1024px or larger)
 ================================= */
 
 @media only screen and (min-width: 870px) {
-  .logo {
-    width: 8vw;
+  
+  
+   /*HERO SECTION*/
+  /*HERO SECTION*/
+
+
+  .hero-main{
+    margin-top: 4rem;
   }
+
+
+  h1.hero-quote{
+    font-size: 4rem;
+    margin-bottom: auto;
+  }
+
+  .back-heading-container{
+    width: 55rem;
+  }
+
+  h2.back-heading{
+      font-size: 9rem;
+       transform: translateY(4rem);
+       letter-spacing: .7rem;
+  }
+
+  h2.front-heading{
+    letter-spacing: 4vw;
+    font-size: 11.5rem;
+    transform: translatex(3rem);
+  }
+
+
+  #scroll-down{
+    margin-top: 2rem;
+  }
+
+  .scroll img{
+    transform: translateY(-2rem);
+  }
+  
+
+
+    
+  
+  
+  
+
 
   /*DESKTOP NAVIGATION*/
   .upper-bar {
@@ -2481,79 +2913,13 @@ Large devices (1024px or larger)
     display: none;
   }
 
-  /* HERO SECTION */
-  /* HERO SECTION */
-  .hero-section {
-    max-width: 95vw;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    margin-top: 6rem;
-  }
-
-
-  .hero-main{
-    flex-direction: row;
-    max-width: 80vw;
-    margin: 0 auto;
-    grid-column: 2 / 3;
-  }
-
-
-  img.hero_pic_mobile{
-    display: none;
-  }
-
-  img.hero_pic_desktop{
-    display:inline;
-    max-width: 40rem;
-    z-index: -1;
-  }
   
-  .hero-text{
-    align-self: flex-end;
-    padding-left: 5%;
-  }
-
-  .hero-text h1{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: inline;
-    text-align: left;
-    font-size: 6.5rem;
-    padding-left: 2rem;
-  }
   
-  .hero-text h2{
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-  }
 
-  .hero-text-right{
-    grid-column: 3 / 4;
-    font-family: "Poppins", sans-serif;
-    margin-left: 1.5rem;
-    width: 80%;
-  }
-  
-  .hero-text-right h6{
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin-top: 4rem;
-    margin-bottom: .5rem;
-  }
 
-  .hero-text-right p{
-    font-weight: 400;
-    font-size: 2.2rem;
-    margin: 0;
-  }
 
-  .scroll{
-    grid-column: 1 / 5;
-    margin: 0 auto;
-  }
-
+  /* WORK SECTION */
+  /* WORK SECTION */
 
   .work {
     max-width: 80vw;
@@ -2770,10 +3136,81 @@ Large devices (1024px or larger)
     font-size: 10rem;
   }
 
-
-  .contact-btn{
-    width: 30vw;
+  .about-hero h2{
+    font-size: 5.5rem;
     }
+
+
+
+    .resume {
+      width: 65%;
+        gap: 3rem;
+    }
+    
+  
+    a.resume:any-link {
+      font-size: 1.6rem;
+    }
+  
+
+
+
+
+
+  /* CONTACT FORM */
+  /* CONTACT FORM */
+  #contact-form{
+    padding: 2rem 6rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-evenly;
+    }
+    .form-block-unit{
+      width: 100%;
+    }
+
+      .contact-form h2{
+    font-size: 3.2rem;
+    }
+     .contact-form h4{
+     font-size: 1.6rem;
+    }
+
+    .fill-in-block,
+    .fill-in-block-big{
+      width:100%;
+    }
+
+
+    #on-the-phone{
+      display: block;
+      align-self: flex-start;
+      margin-top: 6rem;
+    }
+
+    .contact-btn{
+      width: 30vw;
+    }
+}
+
+@media only screen and (min-width: 950px){
+  
+  img.hero_pic{
+    width: 22rem;
+  }
+
+
+  h2.front-heading{
+    transform: translateX(3.3rem);
+  }
+
+
+  .hero-text{
+    width: 70vw;
+  }
+
+
+
 }
 
 
@@ -2781,7 +3218,7 @@ Large devices (1024px or larger)
 
 
   .logo {
-    width: 6vw;
+    width: 9rem;
   }
 
   .header-nav-item,
@@ -2795,79 +3232,12 @@ Large devices (1024px or larger)
 
 
   /* HERO SECTION */
-  .hero-section {
-    max-width: 95vw;
-    margin-top: 6rem;
+  /* HERO SECTION */
+  h2.front-heading{
+    transform: translateX(3.5rem);
   }
 
 
-  .hero-main{
-    display: flex;
-    max-width: 80vw;
-    margin: 0 auto;
-    grid-column: 2 / 3;
-  }
-
-
-  /* HERO IMAGES */
-  /* HERO IMAGES */
-  img.hero_pic_mobile{
-    display: none;
-  }
-
-  img.hero_pic_desktop{
-    display:inline;
-    max-width: 40rem;
-    z-index: -1;
-  }
-
-
-  /* HERO TEXT */
-  /* HERO TEXT */
-  
-  .hero-text{
-    align-self: flex-end;
-    padding-left: 5%;
-  }
-
-  .hero-text h1{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: inline;
-    text-align: left;
-    font-size: 6.5rem;
-    padding-left: 2rem;
-  }
-  
-  .hero-text h2{
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-  }
-
-  .hero-text-right{
-    grid-column: 3 / 4;
-    font-family: "Poppins", sans-serif;
-    margin-left: 1.5rem;
-    width: 80%;
-  }
-  
-  .hero-text-right h6{
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin: 0;
-    margin-bottom: .5rem;
-  }
-
-  .hero-text-right p{
-    font-weight: 400;
-    font-size: 2.2rem;
-    margin: 0;
-  }
-
-  .scroll{
-    grid-column: 1 / 5;
-  }
 
   
 
@@ -2879,6 +3249,11 @@ Large devices (1024px or larger)
 
   .work {
     max-width: 75vw;
+  }
+
+  h2.work-title  {
+    font-size: 2.8rem;
+    letter-spacing: .3vw;
   }
 
   .wli-text {
@@ -3110,30 +3485,49 @@ Large devices (1024px or larger)
     font-size: 12rem;
   }
 
+  .about-hero h2{
+    font-size: 6.5rem;
+  }
+
+
+
+  .resume {
+    width: 55%;
+    
+  }
+  
+
+  
+
+
+  /* CONTACT FORM */
+  /* CONTACT FORM */
+  #contact-form{
+    background: linear-gradient(3deg, rgba(55, 72, 217, 0.14) 59.19%, rgba(46, 151, 184, 0.20) 97.65%), linear-gradient(40deg, rgba(62, 220, 255, 0.20) 50%, rgba(81, 132, 231, 0.20) 74.77%), linear-gradient(165deg, #4384B3 -3.58%, #B4B7F9 70.4%);
+    padding: 8rem 14rem;
+  }
+
+  .contact-form h2{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .contact-form h4{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+
+
 
    /* FOOTER */
   /* FOOTER */
-
-  .footer-header {
-    font-size: 3.2rem;
-    font-family: "Libre Baskerville", serif;
-  }
-
-  .contact p {
-    font-size: 1.8rem;
-  }
-
-
-  .footer-logo img {
-    width: 7vw;
-  }
-
-  .social img {
-    width: 4vw;
-  }
-
-  .copyright{
-  font-size: 1.6rem;
+  p.copy{
+    font-size: 1.4rem;
   }
 
 }
@@ -3141,96 +3535,31 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1180px) {
   
   /* HERO SECTION */
-  .hero-section {
-    display: grid;
-    max-width: 95vw;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    margin-top: 6rem;
-  }
-
-
-  .hero-main{
-    display: flex;
-    max-width: 80vw;
-    margin: 0 auto;
-    grid-column: 2 / 3;
-  }
-
-
-  img.hero_pic_mobile{
-    display: none;
-  }
-
-  img.hero_pic_desktop{
-    display:inline;
-    max-width: 40rem;
-    z-index: -1;
-  }
+  /* HERO SECTION */
   
-
-/* HERO HEADING */
-/* HERO HEADING */
-
-  .hero-text{
-    align-self: flex-end;
-    padding-left: 5%;
+  h2.front-heading{
+    transform: translateX(3.8rem);
   }
 
-  .hero-text h1{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: inline;
-    text-align: left;
-    font-size: 6.5rem;
-    padding-left: 2rem;
-  }
-  
-  .hero-text h2{
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-  }
 
-  
-  /* HERO TEXT BLOCKS */
-  .design-quote{
-    display: block;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-  }
-
-  h2.design-quote{
-    font-weight: 400;
-    font-size: 2.2rem;
-    font-style: italic;
-    margin-bottom: 0;
+  .hero-text-left{
+  max-width: 26rem;
   }
 
   .hero-text-right{
-    grid-column: 2 / 3;
-    font-family: "Poppins", sans-serif;
-    margin-left: 1.5rem;
-    width: 100%;
-    padding-left: 5%;
+    max-width: 20rem;
   }
-  
+
+  .hero-text-left h6,
   .hero-text-right h6{
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin: 0;
-    margin-bottom: .5rem;
+  font-size: 1.5rem;
   }
 
-  .hero-text-right p{
-    font-weight: 400;
-    font-size: 2.2rem;
-    margin: 0;
+  .hero-text-left p,
+  .hero-text-right li{
+  font-size: 1.4rem;
   }
 
-  .scroll{
-    grid-column: 1 / 5;
-  }
 
 
 
@@ -3268,30 +3597,52 @@ Large devices (1024px or larger)
   }
 
 
-  
-  
-  
-  
-  .footer-logo img {
-    width: 6vw;
-  }
-
-  .social img {
-    width: 4vw;
-  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1250px){
+  h2.back-heading{
+    letter-spacing: 1.5rem;
+ }
+
+ .back-heading-container{
+  width: 65rem;
+ }
+
+  h2.front-heading{
+    letter-spacing: 4.5vw;
+  }
+  
+  
   .pp-hero img {
     width: 35vw;
   }
+
+
   h2.design-quote{
     max-width: 70%;
   }
-  
+
+
+  .hero-text{
+    width: 65vw;
+  }
+
+  .resume {
+    width: 50%;
+  }
+
+  a.resume:any-link {
+    font-size: 1.8rem;
+  }
+
+  a.resume:hover{
+    letter-spacing: .4rem;
+  }
+
+
 }
 
 @media only screen and (min-width: 1340px) {
@@ -3304,82 +3655,16 @@ X-large devices (1440px or larger)
     margin-bottom: 0;
   }
 
-  .logo {
-    width: 4vw;
-  }
-
 
   /* HERO SECTION */
-  .hero-section {
-    max-width: 95vw;
-    margin-top: 6rem;
+  /* HERO SECTION */
+  h2.front-heading{
+    transform: translateX(4rem);
   }
 
-  .hero-main{
-    display: flex;
-    max-width: 90vw;
-    margin: 0 auto;
-    grid-column: 2 / 3;
-  }
-
-
-  img.hero_pic_mobile{
-    display: none;
-  }
-
-  img.hero_pic_desktop{
-    display:inline;
-    max-width: 40rem;
-    z-index: -1;
-  }
   
-  .hero-text{
-    align-self: flex-end;
-    padding-left: 5%;
-  }
-
-  .hero-text h1{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: inline;
-    text-align: left;
-    font-size: 6.5rem;
-    padding-left: 2rem;
-  }
-  
-  .hero-text h2{
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-  }
-
-  .hero-text-right{
-    font-family: "Poppins", sans-serif;
-    margin-left: 5%;
-  }
-  
-  .hero-text-right h6{
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin: 0;
-    margin-bottom: .5rem;
-  }
-
-  h2.design-quote{
-    max-width: 80%;
-    font-size: 2.4rem;
-    font-weight: 300;
-  }
 
 
-  .scroll{
-    grid-column: 1 / 5;
-    margin: 0 auto;
-  }
-
-  .scroll img {
-    width: 17rem;
-  }
 
 
   /* WORK SECTION */
@@ -3755,22 +4040,33 @@ X-large devices (1440px or larger)
 
 /* ABOUT PAGE */
 /* ABOUT HERO */
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+
+  width: 55% 
+}
+
+
   .about-hero h1 {
     font-size: 16rem;
-    margin: 5rem auto;
-    color: #2D1E2F;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .about-hero h2{
+    font-size: 8rem;
   }
 
   .divide-line {
-    margin: 2rem auto;
+    margin: 6rem auto;
+    width: 100%;
   }
 
   .north-star {
     width: 3vw;
-  }
-
-  .skills-container {
-    padding-left: 20rem;
   }
 
   .about ul {
@@ -3796,7 +4092,6 @@ X-large devices (1440px or larger)
   }
 
   .about p {
-    width: 60vw;
     font-size: 2rem;
     line-height: 2;
     font-weight: 400;
@@ -3806,55 +4101,28 @@ X-large devices (1440px or larger)
 
   .resume {
     padding: 2rem 6rem;
-    border-radius: 8rem;
     margin: 8rem auto;
     
   }
 
 
   a.resume:any-link {
-    font-size: 2.4rem;
-    color: #242424;
+    font-size: 2rem;
   }
+
 
 
   /* FOOTER */
   /* FOOTER */
-  .footer-header {
-    font-size: 3.2rem;
-    font-family: "Libre Baskerville", serif;
-  }
+  
 
-  /* .contact p {
-    font-size: 2.4rem;
-  } */
 
-  .contact-btn{
-    width: 20vw;
-    }
-
-  a.contact-btn:any-link {
-    font-size: 2.4rem;
-  }
-
-  .footer-logo img {
-    width: 5vw;
-  }
-
-  .social img {
-    width: 4vw;
-  }
 }
 
 
 
 @media only screen and (min-width: 1480px) {
   
-  h2.design-quote{
-    max-width: 70%;
-    font-size: 2.6rem;
-    font-weight: 300;
-  }
 
   img.hero_pic_desktop{
     max-width: 50rem;
@@ -3884,35 +4152,28 @@ X-large devices (1440px or larger)
     height: auto;
   }
 
-  img.hero_pic_desktop{
-    max-width: 40rem;
-    }
-
-  h2.design-quote{
-    max-width: 65%;
-  }
-
-  .hero-text h1{
-  font-size: 7.2rem;
-  }
-  .hero-text h2{
-    font-size: 3.4rem;
-  }
 
   /* .hero-text-right{
     margin-top: 1.4rem;
   } */
 
-  .hero-text-right h6{
-  font-size: 1.8rem;
+  h2.back-heading{
+    letter-spacing: 2rem;
+ }
+
+ .back-heading-container{
+  width: 75rem;
+ }
+
+
+
+
+  .hero-text{
+    width: 60vw;
   }
 
-  .hero-text-right p{
-    font-size: 2.4;
-    font-weight: 500;
-    letter-spacing: 1;
-  }
 
+  
     
  
 
@@ -4001,14 +4262,6 @@ X-large devices (1440px or larger)
 
 
 
-
-  .footer-logo img {
-    width: 5vw;
-  }
-
-  .social img {
-    width: 4rem;
-  }
 }
 
 

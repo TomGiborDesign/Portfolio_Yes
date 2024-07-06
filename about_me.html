@@ -12,14 +12,15 @@
 <body id="about-me">
     <header class="header">
         <div class="upper-bar" id="header">
-            <div class="header-logo"><img src="img/icons/tuxo_shield.svg" alt="logo" class="logo"></div>
+            <div class="header-logo"><a href="./index.html">
+                <img src="img/icons/logo_june.svg" alt="logo" class="logo"></a></div>
 
             <nav class="desktop-nav mobile-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a href="./index.html">Home</a></li>
                     <li class="header-nav-item"><a href="./about_me.html">About Me</a></li>
                     <li class="header-nav-item"><a href="./index.html#my-work">Work</a></li>
-                    <li class="header-nav-item contact-toggle"><a href="#contact">Contact</a></li>
+                    <li class="header-nav-item contact-toggle"><a href="#footer">Contact</a></li>
                     <li class="header-nav-item"><a href="files/Tomer_Rozenberg_Resume.pdf" download="
                         Tomer_Rozenberg_Resume">Resume</a></li>
                 </ul>
@@ -32,7 +33,10 @@
 
         </div>
         <section class="about-hero">
-            <h1 class="about-me-title">Tomer Rozenberg</h1>
+            <div>
+                <h2 class="about-me-pretitle">Who is</h2>
+                <h1 class="about-me-title">Tomer Rozenberg?</h1>
+            </div>
             <div class="divide-line">
                 <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg"
                     alt="content dividing line">
@@ -45,12 +49,9 @@
     <section class="about">
         <div class="about-me">
             <p class="about-me-text">
-                Hi! I'm a UX/UI Designer shifted from the world of education. During 5 years of teaching, staff
-                training, and
-                management,
-                I've honed skills in communication,
-                curriculum development, and problem-solving. These skills help me research, and create a human-centered
-                design.
+                Hi ! I'm a UX / UI Designer shifted from the world of education. I use the skills I've honed in communication, identifying humans needs and problem solving to create meaningful experiences that benefit both users and businesses. 
+                As a passionate learner, I continue to enhance my toolkit to make ideas a reality.
+
             </p>
         </div>
 
@@ -59,7 +60,7 @@
             <hr class="right-line">
         </div>
         <a href="files/Tomer_Rozenberg_Resume.pdf" download="
-            Tomer Rzenberg - Resume" class="resume">Download my Resume</a>
+            Tomer Rzenberg - Resume" class="resume">Download My Resume<img src="img/icons/download-arrow_81500.svg" alt="download" id="download-resume"></a>
         <div class="divide-line">
             <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg" alt="content dividing line">
             <hr class="right-line">
@@ -69,14 +70,31 @@
             <div class="skills-container"><!--first_column-->
                 <ul class="skills-list1">
                     <li class="skills-list1">User Research</li>
-                    <li class="skills-list1">UX / UI Deisgn</li>
+                    <li class="skills-list1">Surveying</li>
+                    <li class="skills-list1">Interviewing</li>
+                    <li class="skills-list1">Analyzing and Presenting Data</li>
+                    <li class="skills-list1">Card Sorting Workshops</li>
+                    <li class="skills-list1">Sketching</li>
+                    <li class="skills-list1">Wireframing</li>
                     <li class="skills-list1">Prototyping</li>
                     <li class="skills-list1">Usability Testing</li>
-                    <li class="skills-list2">Frontend-Dev: CSS, HTML, JS</li>
-                    <li class="skills-list2">Staff Training and Managing</li>
-                    <li class="skills-list2">Communication and Presentation</li>
+                    <li class="skills-list1">Figma</li>
                 </ul>
+                <div class="skills-container">
+                    <ul class="skills-list2">
+                        <li class="skills-list2">HTML</li>
+                        <li class="skills-list2">CSS</li>
+                        <li class="skills-list2">JavaScript</li>
+                        <li class="skills-list2">GitHub</li>
+                        <li class="skills-list2">Web Hosting</li>
+                        <li class="skills-list2">Teamwork</li>
+                        <li class="skills-list2">Great Interpersonal Communication</li>
+                        <li class="skills-list2">Great Client Relations</li>
+                        <li class="skills-list2">Critical Eye</li>
+                    </ul>
+                </div>
             </div>
+            <p class="about-me-text">I'm currently working on improving my Graphic design skills using Adobe Illustrator to better design new brand identities. I'm so excited about that!</p>
         </div><!--CLOSE_skills_container-->
         <div class="divide-line">
             <hr class="left-line"><img class="north-star" src="img/icons/north_star.svg" alt="content dividing line">
@@ -85,12 +103,14 @@
         <h3 class="spersonal-title">What Interests Me?</h3>
         <div class="personal">
             <p class="about_me">
-                I'm passionate about philosophy, psychology, the human experience, and what motivates us.
-                That is why I took coaching and NLP courses alongside more traditional psychology courses.
-                I'm an advocate of learning as a means to improve our lives.
+                My favorite part of my job is user research. I love how showing interest in people, makes them feel important and willing to share. That's how I learn what I should design.
+                <br>
+                I love aesthetics, and I love creative processes that take time to come to fruition.
+                My next big thing to learn and improve is Brand Identity Design. I find it so exciting!
+                That's why I'm taking an online course on everything Adobe these days. 
+                To create brands that owners are proud of and people are attracted to.
             </p>
-            <p class="about_me">I practice photography, acting and writing, and I love improving my physical and mental
-                health.</p>
+            <p class="about_me">Oh, and when I'm not busy doing design things. I like learning from other designers, lectures, or newspapers. I do photography, I love dancing and doing a lot of sports, as much as I have the time for.</p>
         </div>
     </section>
     <br>
@@ -99,46 +119,51 @@
     <div class="return-to-top">
         <a href="#header" class="to-top">Back to top</a>
     </div>
-    <footer id="contact">
-        <section class="contact">
-            <div class="footer-logo"><img src="img/icons/logo_white.svg" alt="logo" class="logo">
+    <footer id="footer">
+        <section id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="e599c53f-e4ea-4a11-9542-0031ed17b971">
+                <div class="form-title">
+                    <h2>Let's Talk!</h2>
+                    <h4>I'm here for any question or a chat over a nice cup of coffee</h4>
+                </div>
+                <div class="form-block-unit fill-name">
+                    <h3 class="contact-name">NAME</h3>
+                    <input type="text" name="name" class="fill-in-block" required>
+                </div>
+                <div class="form-block-unit fill-email">
+                    <h3 class="contact-email">E-MAIL</h3>
+                    <input type="text" name="email" class="fill-in-block" required>
+                </div>
+                <div class="form-block-unit fill-subject">
+                    <h3 class="contact-subject">SUBJECT</h3>
+                    <input type="text" name="subject" class="fill-in-block" required>
+                </div>
+                <div class="form-block-unit fill-message">
+                    <h3 class="contact-message">MESSAGE</h3>
+                    <textarea name="message" class="fill-in-block-big"></textarea>
+                </div>
+                <button type="submit">SUMBMIT<img src="img/icons/send_message_white.svg" alt="a letter" id="submit-img"></button>
+            </form> 
+            <img src="img/about_me/on_phone_colored.svg" alt="a man talking on the phone" id="on-the-phone">
+        </section>
+        <section class="copyrights-container">
+            
+            <div class="copyrights">
+                <img src="img/icons/water_mark.svg" alt="brand watermark"><br>
+                <p class="copy">Copyright &copy; <span class="footer-year">2024</span> by Tomer Rozenberg. All rights
+                reserved.</p>
             </div>
-            <h2 class="footer-header">Tomer UX Oddesy</h2>
-            <div class="footer-text">
-                <!-- <h4 class="contact-h">Get in touch now</h4> -->
-                
-                <p class="contact-p">Interested in colaborating? <br>Have some questions?<br>
-                Reach out on the button below</p>
-                    <div class="contact-btn-container"><a href="mailto:tomer@66designs.com" target="_blank" rel="noreferrer" class="contact-btn">CONTACT ME</a></div>
-                
-            </div>
+            
             <div class="social">
-                <a href="mailto:tomer@66designs.com" target="_blank" rel="noreferrer">
+                <a href="mailto:tomer@15designs.com" target="_blank" rel="noreferrer">
                     <img src="img/icons/mail_white.svg" alt="Email icon"></a>
                 <a href="http://linkedin.com/in/tomeruxroz" target="_blank" rel="noreferrer">
                     <img src="img/icons/linkedin_white.svg" alt="LinkedIn icon"></a>
-                <a href="https://instagram.com/tom_gibor" target="_blank" rel="noreferrer">
-                    <img src="img/icons/instagram_white.svg" alt="instagram_icon icon"></a>
-                    
-                </div>
-                <div class="copyright"><p class="copy">Copyright &copy; <span class="footer-year">2024</span> by Tomer Rozenberg. All rights
-                    reserved.</p></div>
+                <a href="https://instagram.com/tom_gibor" target="_blank" rel="noreferrer" id="instagram-link">
+                    <img src="img/icons/instagram_white.svg" alt="instagram_icon icon"></a>        
+            </div>
         </section>
-        
-        <!-- <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Valid CSS!" />
-                </a>
-            </p>
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px"
-                        src="http://jigsaw.w3.org/css-validator/images/vcss"
-                        alt="Valid CSS!" />
-                </a>
-            </p>     -->
     </footer>
     <script defer src="js/script.js"></script>
 </body>

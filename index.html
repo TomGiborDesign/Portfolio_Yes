@@ -20,14 +20,15 @@
 <body id="home">
     <header class="header">
         <div class="upper-bar" id="header">
-            <div class="header-logo"><img src="img/icons/tuxo_shield.svg" alt="logo" class="logo"></div>
+            <div class="header-logo"><a href="./index.html">
+            <img src="img/icons/logo_black.png" alt="logo" class="logo"></a></div>
 
             <nav class="desktop-nav mobile-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a href="./index.html">Home</a></li>
                     <li class="header-nav-item"><a href="./about_me.html">About Me</a></li>
                     <li class="header-nav-item work-toggle"><a href="#my-work">Work</a></li>
-                    <li class="header-nav-item contact-toggle"><a href="#contact">Contact</a></li>
+                    <li class="header-nav-item contact-toggle"><a href="#footer">Contact</a></li>
                     <li class="header-nav-item"><a href="files/Tomer_Rozenberg_Resume.pdf" download="
                         Tomer_Rozenberg_Resume">Resume</a></li>
                 </ul>
@@ -44,23 +45,35 @@
 
         <section class="hero-section">
             <div class="hero-main">
-                <div class="hero-text">
-                    <h1 class="hero-quote">TOMER ROZENBERG</h1>
-                    <h2>UX / UI Designer</h2>
+                <h1 class="hero-quote">HI I'M<br>TOMER ROZENBERG</h1>
+                <img src="img/hero/smiling_oval.png" alt="a picture of the author" class="hero_pic">
+                <div class="back-and-front-heading-container">
+                    <div class="back-heading-container">
+                        <h2 class="back-heading">UX</h2>
+                        <h2 class="back-heading">UI</h2>
+                    </div>
+                    <h2 class="front-heading" id="front-heading">DESIGNER</h2>
                 </div>
-                <img src="img/hero/Chosen2PNG.png" alt="a picture of the author" class="hero_pic_mobile">
-                <img src="img/hero/Chosen_square.jpg" alt="a picture of the author" class="hero_pic_desktop">
             </div>
-            <h2 class="design-quote">"UX design is more than aesthetics; it's about crafting meaningful experiences
-                that empower and delight users."
-            </h2>
-            <div class="hero-text-right">
-                <!-- <h6 class="bio-heading">BIOGRAPHY</h6> -->
-                <p class="bio-text">With a holistic approach and an eye for detail, I navigate life with purpose.
-                    I'm Tomer, a creative designer that creates meaningful interaction</p>
+            <div class="hero-text">
+                <div class="hero-text-left">
+                    <h6 class="bio-heading">BIOGRAPHY</h6>
+                    <p class="bio-text">With an empathic approach and an eye for details, I design human-centered products under real-life constraints. My aim is to empower users and satisfy businesses”</p>
+                </div>
+                <div class="hero-text-right">
+                    <h6 class="services-heading">SERVICES</h6>
+                    <ul class="services-text">
+                        <li>UX / UI Product Design</li>
+                        <li>Mobile Application Design</li>
+                        <li>Website Design</li>
+                        <li>Brand Identity Design</li>
+                    </ul>
+                    <a href="#contact-form" class="contact-button">CONTACT ME<img id="megaphone" src="img/icons/megaphone.svg" alt="megaphone icon"></a>
+                </div>
             </div>
-            <div class="scroll"><a href="#my-work" class="down-arrow"><img src="img/icons/downArrow.gif" class="down-arrow" alt="down pointing arrow"></a></div>
-
+        <div class="scroll">
+            <h3 id="scroll-down">SCROLL DOWN</h3>
+            <a href="#my-work" class="down-arrow"><img src="img/icons/downArrow.gif" class="down-arrow" alt="down pointing arrow"></a></div>
         </section>
     </header>
 
@@ -68,14 +81,11 @@
     <section class="my-work" id="my-work">
 
         <div class="work">
-            <div class="work-tite-box">
-                <h2 class="work-title">"UX design is more than aesthetics; it's about crafting meaningful experiences
-                    that empower and delight users."
+            <div class="work-title-container">
+                <h2 class="work-title">MY WORK
                 </h2>
-                <h2 class="work-title-mobile">MY WORK
-                </h2>
+                <img src="img/icons/myWorkDeco.svg" alt="title decoration">
             </div>
-
             <div class="wl-item2"><!--case study card-->
                 <img src="img/work_cards/pinnacle_card.jpg" alt="image of a phone" class="wi2-text">
                 <div class="wli-text"><!--right side of the card-->
@@ -90,7 +100,7 @@
                 <div class="wli-text"><!--right side of the card-->
                     <h6 class="tags">CODING <b class="tags"> |</b> HOSTING <b class="tags"> |</b> WEB DESIGN</h6>
                     <h3>Designing, Coding, And Launching a Professional Portfolio</h3>
-                    <p>A Deep dive into programming languages, tools and web development</p>
+                    <p>A Deep dive into programming languages, tools, and web development</p>
                     <a href="portfolio_case.html" class="btn-por-case">View Case Study</a>
                 </div>
             </div>
@@ -99,74 +109,77 @@
                 <div class="wli-text"><!--right side of the card-->
                     <h6 class="tags">RESEARCH <b class="tags"> |</b> PRODUCT DESIGN</h6>
                     <h3>A Modernized Approach To Language Acquisition</h3>
-                    <p>How I used users' interests to create a self sustained learning environment</p>
+                    <p>How I used users' interests to create a self-sustained learning environment</p>
                     <a href="accomplished.html" class="btn-ac">View Case Study</a>
 
                         <div class="shading-overlay1"></div>
                         <div class="shading-overlay2" ></div>
-                        <div class="construction-title" >Under Construction</div>
+                        <div class="construction-title" >Coming Soon!</div>
                 </div>
             </div>
             <div class="wl-item-david"><!--case study card-->
                 <img src="img/work_cards/david-miel.jpg" alt="image of a honeycomb">
                 <div class="wli-text"><!--right side of the card-->
                     <h6 class="tags">RESEARCH <b class="tags"> |</b> BRAND DESIGN <b class="tags"> |</b> E-COMMERCE</h6>
-                    <h3>Creating a Digital Presence to a Local Honey Producer </h3>
-                    <p>How we formed a brand identity around the clients valued, and pushed his business into 2024's e-commerce practices</p>
+                    <h3>Creating a Digital Presence For a Local Honey Producer </h3>
+                    <p>How we formed a brand identity around the client's values and pushed his business into 2024's e-commerce practices</p>
                     <a href="#" class="btn-david">View Case Study</a>
 
                         <div class="shading-overlay1"></div>
                         <div class="shading-overlay2" ></div>
-                        <div class="in-progress-title" >Work in Progress</div>
+                        <div class="in-progress-title" >Coming Soon!</div>
                 </div>
             </div>
         </div>
-
+        
     </section>
-    <div class="return-to-top">
-        <a href="#header" class="to-top">Back to top</a>
-    </div>
-    <footer id="contact">
-        <section class="contact">
-            <div class="footer-logo"><img src="img/icons/logo_white.svg" alt="logo" class="logo">
+    <footer id="footer">
+        <section id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="e599c53f-e4ea-4a11-9542-0031ed17b971">
+                <div class="form-title">
+                    <h2>Let's Talk!</h2>
+                    <h4>I'm here for any question or a chat over a nice cup of coffee</h4>
+                </div>
+                <div class="form-block-unit fill-name">
+                    <h3 class="contact-name">NAME</h3>
+                    <input type="text" name="name" class="fill-in-block" required>
+                </div>
+                <div class="form-block-unit fill-email">
+                    <h3 class="contact-email">E-MAIL</h3>
+                    <input type="text" name="email" class="fill-in-block" required>
+                </div>
+                <div class="form-block-unit fill-subject">
+                    <h3 class="contact-subject">SUBJECT</h3>
+                    <input type="text" name="subject" class="fill-in-block" required>
+                </div>
+                <div class="form-block-unit fill-message">
+                    <h3 class="contact-message">MESSAGE</h3>
+                    <textarea name="message" class="fill-in-block-big"></textarea>
+                </div>
+                <button type="submit">SUMBMIT<img src="img/icons/send_message_white.svg" alt="a letter" id="submit-img"></button>
+            </form> 
+            <img src="img/about_me/on_phone_colored.svg" alt="a man talking on the phone" id="on-the-phone">
+        </section>
+        <section class="copyrights-container">
+            
+            <div class="copyrights">
+                <img src="img/icons/water_mark.svg" alt="brand watermark"><br>
+                <p class="copy">Copyright &copy; <span class="footer-year">2024</span> by Tomer Rozenberg. All rights
+                reserved.</p>
             </div>
-            <h2 class="footer-header">Tomer UX Oddesy</h2>
-            <div class="footer-text">
-                <!-- <h4 class="contact-h">Get in touch now</h4> -->
-                
-                <p class="contact-p">Interested in colaborating? <br>Have some questions?<br>
-                Reach out on the button below</p>
-                <div class="contact-btn-container"><a href="mailto:tomer@66designs.com" target="_blank" rel="noreferrer" class="contact-btn">CONTACT ME</a></div>
-                
-            </div>
+            
             <div class="social">
                 <a href="mailto:tomer@15designs.com" target="_blank" rel="noreferrer">
                     <img src="img/icons/mail_white.svg" alt="Email icon"></a>
                 <a href="http://linkedin.com/in/tomeruxroz" target="_blank" rel="noreferrer">
                     <img src="img/icons/linkedin_white.svg" alt="LinkedIn icon"></a>
-                <a href="https://instagram.com/tom_gibor" target="_blank" rel="noreferrer">
-                    <img src="img/icons/instagram_white.svg" alt="instagram_icon icon"></a>
-                    
-                </div>
-                <div class="copyright"><p class="copy">Copyright &copy; <span class="footer-year">2024</span> by Tomer Rozenberg. All rights
-                    reserved.</p></div>
+                <a href="https://instagram.com/tom_gibor" target="_blank" rel="noreferrer" id="instagram-link">
+                    <img src="img/icons/instagram_white.svg" alt="instagram_icon icon"></a>        
+            </div>
         </section>
-        
-        <!-- <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Valid CSS!" />
-                </a>
-            </p>
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px"
-                        src="http://jigsaw.w3.org/css-validator/images/vcss"
-                        alt="Valid CSS!" />
-                </a>
-            </p>     -->
     </footer>
+    
     <script defer src="js/script.js"></script>
 </body>
 
