@@ -1,11 +1,13 @@
 
 
 // SET CURRENT YEAR
+// SET CURRENT YEAR
 const yearEl = document.querySelector('.footer-year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 
+//MOBILE NAV
 //MOBILE NAV
 const navbarToggler = document.querySelector(".btn-mobile-nav");
 const navbarMenu = document.querySelector(".upper-bar");
@@ -35,6 +37,28 @@ function workTogglerClick() {
 
 
 
+//CHAPTER INDEX
+//CHAPTER INDEX
+// const addActiveClass = (entries, observer) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         console.log(entry.target.id);
+//         let currentChapter = document.querySelector('.chapter-index a[href='#${entry.target.id}']')
+//         currentChapter.classList.add("active");
+//       }
+//     });
+// };
+
+// const options = {
+//   threshold: 0.8,
+// };
+
+// const observer = new IntersectionObserver(addActiveClass, options);
+// const sections = document.querySelectorAll("section");
+
+// sections.forEach((section) => {
+//   observer.observe(section);
+// });
 
 
 
