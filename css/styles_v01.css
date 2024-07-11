@@ -1271,6 +1271,7 @@ h2.work-title  {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
 }
 
 
@@ -1419,6 +1420,10 @@ h1.white-text{
     margin: inherit auto;
   }
 
+  .main-tasks{
+    max-width: 100%;
+  }
+
 
 .design-evo {
   display: flex;
@@ -1458,6 +1463,7 @@ h1.white-text{
 .problem-state h2{
   margin: 8rem auto;
   font-weight: 500;
+  font-size: 2.4rem;
 }
 
 
@@ -3535,6 +3541,10 @@ h2.problem-state-header{
   font-weight: 700;
 }
 
+.problem-state h2{
+  font-size: 2.8rem;
+}
+
   .intro p,
   .design p,
   .learnings li,
@@ -4262,6 +4272,11 @@ X-large devices (1440px or larger)
     max-width: 60vw;
   }
 
+
+  .problem-state h2{
+    font-size: 3.5rem;
+  }
+
   .overview-icons{
   width: 100%;
   }
@@ -4472,6 +4487,8 @@ X-large devices (1440px or larger)
   h1.pp-title{
     font-size: 6rem;
   }
+
+  
   
   
 

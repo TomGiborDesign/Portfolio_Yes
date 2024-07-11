@@ -37,6 +37,7 @@ function workTogglerClick() {
 
 
 
+
 //CHAPTER INDEX
 //CHAPTER INDEX
 // const addActiveClass = (entries, observer) => {
